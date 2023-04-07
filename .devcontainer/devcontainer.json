@@ -10,7 +10,25 @@
 				"svelte.svelte-vscode",
 				"dbaeumer.vscode-eslint",
 				"esbenp.prettier-vscode"
-			]
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"[typescript]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"[svelte]": {
+					"editor.defaultFormatter": "svelte.svelte-vscode"
+				},
+				"[css]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"[json]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"workbench.editor.labelFormat": "short",
+				"svelte.enable-ts-plugin": true,
+				"svelte.plugin.svelte.useNewTransformation": true
+			}
 		}
 	},
 
