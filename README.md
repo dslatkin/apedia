@@ -8,8 +8,8 @@ reference site for a 2D multiplayer online fantasy role-playing game called
 [Whispers in
 Akarra](https://web.archive.org/web/20040325013734/http://akarra.net/), the game
 itself a hobby project created by [Jens
-Bergenstein](https://en.wikipedia.org/wiki/Jens_Bergensten), now the lead
-developer and designer for Minecraft).
+Bergensten](https://en.wikipedia.org/wiki/Jens_Bergensten), now the lead
+developer and designer for Minecraft.
 
 I have since converted the "Apedia" as it was affectionately called to a static
 site hosted on Vercel, with the only _very minor_ change to the original code
@@ -17,3 +17,21 @@ being to replace an old bit of PHP I had used to render a "cool random weapon"
 on the home page of the site. If you're curious about the old web, I encourage
 you to check out [the home page](/src/app.html) or [the drop-down
 menu](/static/scripts/menu.js).
+
+## Screenshots
+
+### First wave of monsters in a special event
+
+![Screenshot](/static/images/screenshots/large/flameattack/firstwave.jpg)
+
+### The Purple Haze clan is founded
+
+![Screenshot](/static/images/screenshots/large/normal/clanfounding.jpg)
+
+### A darkling village
+
+![Screenshot](/static/images/screenshots/large/normal/underground_village.jpg)
+
+### The first in-game wedding
+
+![Screenshot](/static/archives/screenshots/pa_13/large/normal/wedding.jpg)
