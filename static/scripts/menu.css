@@ -1,0 +1,44 @@
+.lowText {
+	text-decoration: none;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.highText {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.itemBorder {
+	border: 1px solid #000000
+}
+
+.itemBorderBlank {
+	border: 1px solid #000000
+}
+
+.buttonText {
+	text-decoration: none;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.buttonHover {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 1px;
+	font-size: 10px;
+}
+
+.buttonBorder {
+	border: 1px outset #333333;
+}
+
+.buttonBorderOver {
+	border: 1px inset #000000
+}

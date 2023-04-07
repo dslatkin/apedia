@@ -1,0 +1,32 @@
+strong {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	color: #CC6600;
+	text-decoration: underline;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	background-color: #999999;
+}
+
+table {
+	background-color: #000000;
+	margin: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+}
+
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
