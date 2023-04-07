@@ -1,38 +1,19 @@
-# create-svelte
+# Akarrian Encyclopedia
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Visit [apedia.talonz.com](https://apedia.talonz.com) to view the deployed site.
 
-## Creating a project
+This is a very old website that I took over maintenance for from a person who
+went by the in-game name "Trance" way back in June 2003. It was the primary
+reference site for a 2D multiplayer online fantasy role-playing game called
+[Whispers in
+Akarra](https://web.archive.org/web/20040325013734/http://akarra.net/), the game
+itself a hobby project created by [Jens
+Bergenstein](https://en.wikipedia.org/wiki/Jens_Bergensten), now the lead
+developer and designer for Minecraft).
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+I have since converted the "Apedia" as it was affectionately called to a static
+site hosted on Vercel, with the only _very minor_ change to the original code
+being to replace an old bit of PHP I had used to render a "cool random weapon"
+on the home page of the site. If you're curious about the old web, I encourage
+you to check out [the home page](/src/app.html) or [the drop-down
+menu](/static/scripts/menu.js).
