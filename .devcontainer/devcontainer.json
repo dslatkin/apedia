@@ -39,7 +39,7 @@
     // "forwardPorts": [],
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "npm install -g npm@9 && exec bash && npm install"
+    "postCreateCommand": "npm install -g npm@9 && npx npm@9 install"
 
     // Configure tool-specific properties.
     // "customizations": {},
