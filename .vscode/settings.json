@@ -1,0 +1,32 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "svelte.enable-ts-plugin": true,
+    "eslint.validate": ["javascript", "typescript", "svelte"],
+    "files.associations": {
+        "*.css": "tailwindcss",
+        "*.svg": "html" // easy way to format it with Prettier
+    },
+
+    // // todo - Remove this when Tailwind intellisense issues are fixed
+    // "tailwindCSS.experimental.configFile": "src/app.css",
+
+    // Noisy false negatives and there's no way to check in CI/CD anyways.
+    // https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1548
+    "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
+
+    // Provide type hints for Tailwind classes used in <script> blocks
+    "tailwindCSS.classFunctions": ["tw", "twMerge"],
+
+    // Currently experimental
+    "chat.useNestedAgentsMdFiles": true
+}
