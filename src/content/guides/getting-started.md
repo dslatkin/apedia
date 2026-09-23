@@ -2,13 +2,6 @@ This guide will explain the basics to get yourself familiarized with the game. I
 
 _During this guide I will refer to Whispers In Akarra as "WiA"._
 
-**Table of Contents**
-
-1. [Creating an Account](#creating-an-account)
-2. [Learning the Interface](#learning-the-interface)
-3. [Navigating the Menu Screens](#navigating-the-menu-screens)
-4. [Exploring the World](#exploring-the-world)
-
 ## Creating an Account
 
 You are not allow to create accounts manually when you start playing [Whispers in Akarra](http://www.akarra.com/). This is because Akarra is a very special game with a very special feel and pace. Instead, you'll need to connect to the game using the "anonymous" accounts and search out the NPC (non-playable-character) called Cecilia Lifebringer. She will help you create a new account.

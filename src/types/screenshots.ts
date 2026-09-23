@@ -1,4 +1,4 @@
-import type { Link, Markdown, Picture } from './common';
+import type { AssetPath, Markdown, Picture } from './common';
 
 /** A release of the game. Galleries are grouped by the version they were taken in. */
 export interface GameVersion {
@@ -29,6 +29,11 @@ export interface ScreenshotSection {
 export interface Screenshot extends Picture {
     description: Markdown;
     /** Extra full-size views of the same moment, e.g. "with names", "2nd screenshot". */
-    alternates?: Link[];
+    alternates?: AlternateView[];
     submittedBy?: string;
+}
+
+export interface AlternateView {
+    label: string;
+    full: AssetPath;
 }

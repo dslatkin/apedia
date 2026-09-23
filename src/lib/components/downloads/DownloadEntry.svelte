@@ -1,0 +1,27 @@
+<script lang="ts">
+    import { asset } from '$app/paths';
+    import { formatBytes } from '$lib/format';
+    import type { Download } from '$types';
+    import DefinitionList, {
+        type DefinitionEntry,
+    } from '../DefinitionList.svelte';
+
+    /** One downloadable file with its details and mirrors. Shown inside its section. */
+    let { download }: { download: Download } = $props();
+
+    let entries = $derived<DefinitionEntry[]>([
+        { term: 'Version', text: download.version },
+        { term: 'File Name', text: download.fileName },
+        { term: 'File Size', text: formatBytes(download.fileSize) },
+        {
+            term: 'Mirrors',
+            links: download.mirrors.map((mirror) => ({
+                label: mirror.location,
+                href: mirror.url,
+            })),
+        },
+    ]);
+</script>
+
+<p><a href={asset(download.file)}>Download {download.fileName}</a></p>
+<DefinitionList {entries} />

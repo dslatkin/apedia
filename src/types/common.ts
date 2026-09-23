@@ -1,3 +1,5 @@
+import type { Pathname, PathnameWithSearchOrHash } from '$app/types';
+
 /**
  * Markdown source text. Plain CommonMark, no extensions or embedded components.
  *
@@ -15,8 +17,25 @@ export type IsoDate = string;
 /** Root-relative path to a file under `static/`, e.g. "/images/weapons/axes/rustyaxe.gif". */
 export type AssetPath = string;
 
-/** Absolute URL to a site outside the encyclopedia. */
-export type ExternalUrl = string;
+/** A URL that leaves the site: a web page or an email address. */
+export type ExternalUrl =
+    `http://${string}` | `https://${string}` | `mailto:${string}`;
+
+/**
+ * A link to a page on this site, e.g. "/guides/commands" or "/equipment/weapons#axes".
+ * Checked against the routes SvelteKit generates, so a link to a page that does not exist
+ * is a type error.
+ */
+export type SitePath = PathnameWithSearchOrHash;
+
+/** A page on this site without a `#fragment`, e.g. "/equipment/weapons". */
+export type SitePathname = Pathname;
+
+/** A link to a section of the current page. */
+export type FragmentHref = `#${string}`;
+
+/** Anywhere a link can point. */
+export type Href = SitePath | FragmentHref | ExternalUrl;
 
 export interface Image {
     src: AssetPath;
@@ -32,8 +51,14 @@ export interface Picture {
 
 export interface Link {
     label: string;
-    /** Internal route (may include a `#fragment`) or an external URL. */
-    href: string;
+    href: Href;
+}
+
+/** A named group that content is sorted into, e.g. a weapon category or an armor slot. */
+export interface Category<Id extends string = string> {
+    /** Used as the `#fragment` anchor. */
+    id: Id;
+    label: string;
 }
 
 /** A position on the world map. */

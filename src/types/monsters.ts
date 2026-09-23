@@ -26,3 +26,13 @@ export interface Monster {
     /** Only appears when summoned during events or as a random spawn. */
     eventOnly?: boolean;
 }
+
+/** A range of levels the bestiary is split into, e.g. "Levels 25 - 49". */
+export interface LevelBand {
+    /** Used as the `#fragment` anchor, e.g. "levels-25-49". */
+    id: string;
+    label: string;
+    min: number;
+    /** Absent for the open-ended top band. */
+    max?: number;
+}

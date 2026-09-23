@@ -1,7 +1,17 @@
-import type { NavLink, Picture, Site } from '$types';
+import type { Category, NavLink, Picture, Site, SitePathname } from '$types';
+import {
+    accessoryCategories,
+    armorSlots,
+    itemCategories,
+    scrollCategories,
+    weaponCategories,
+} from './equipment/categories';
+import { commandReference } from './guides/commands';
+import { monsterLevelBands } from './guides/monster-levels';
 
-function sections(route: string, labels: Record<string, string>): NavLink[] {
-    return Object.entries(labels).map(([id, label]) => ({
+/** Links to the sections of a page, e.g. each weapon category on the Weapons page. */
+function sections(route: SitePathname, categories: Category[]): NavLink[] {
+    return categories.map(({ id, label }) => ({
         label,
         href: `${route}#${id}`,
     }));
@@ -61,12 +71,13 @@ export const site: Site = {
                 { label: 'Fellowships', href: '/guides/fellowships' },
                 {
                     label: 'Commands',
-                    items: sections('/guides/commands', {
-                        general: 'General',
-                        fellowship: 'Fellowship',
-                        guild: 'Guild',
-                        shortcuts: 'Shortcuts',
-                    }),
+                    items: sections('/guides/commands', [
+                        ...commandReference.groups.map(({ id, title }) => ({
+                            id,
+                            label: title.replace(' Commands', ''),
+                        })),
+                        { id: 'shortcuts', label: 'Shortcuts' },
+                    ]),
                 },
                 { label: 'Technical Info', href: '/guides/technical' },
                 { label: 'NPC Locations', href: '/guides/npcs' },
@@ -74,12 +85,7 @@ export const site: Site = {
                 { label: 'Obelisk Locations', href: '/guides/obelisks' },
                 {
                     label: 'Monsters',
-                    items: sections('/guides/monsters', {
-                        'levels-0-24': 'Levels 0 - 24',
-                        'levels-25-49': 'Levels 25 - 49',
-                        'levels-50-74': 'Levels 50 - 74',
-                        'levels-75': 'Levels 75+',
-                    }),
+                    items: sections('/guides/monsters', monsterLevelBands),
                 },
             ],
         },
@@ -88,56 +94,26 @@ export const site: Site = {
             items: [
                 {
                     label: 'Weapons',
-                    items: sections('/equipment/weapons', {
-                        axes: 'Axes',
-                        crushing: 'Crushing',
-                        daggers: 'Daggers',
-                        'non-violent': 'Non-Violent',
-                        ranged: 'Ranged',
-                        spears: 'Spears',
-                        staffs: 'Staffs',
-                        swords: 'Swords',
-                    }),
+                    items: sections('/equipment/weapons', weaponCategories),
                 },
                 {
                     label: 'Armor',
-                    items: sections('/equipment/armor', {
-                        head: 'Head',
-                        body: 'Body',
-                        hands: 'Hands',
-                        shields: 'Shields',
-                        feet: 'Feet',
-                    }),
+                    items: sections('/equipment/armor', armorSlots),
                 },
                 {
                     label: 'Accessories',
-                    items: sections('/equipment/accessories', {
-                        necklaces: 'Necklaces',
-                        rings: 'Rings',
-                    }),
+                    items: sections(
+                        '/equipment/accessories',
+                        accessoryCategories,
+                    ),
                 },
                 {
                     label: 'Items',
-                    items: sections('/equipment/items', {
-                        ammo: 'Ammo',
-                        food: 'Food',
-                        household: 'Household',
-                        junk: 'Junk',
-                        lights: 'Lights',
-                        materials: 'Materials',
-                        mounts: 'Mounts',
-                        potions: 'Potions',
-                        valuables: 'Valuables',
-                    }),
+                    items: sections('/equipment/items', itemCategories),
                 },
                 {
                     label: 'Scrolls',
-                    items: sections('/equipment/scrolls', {
-                        mundane: 'Mundane',
-                        fighter: 'Fighter',
-                        apprentice: 'Apprentice',
-                        neophyte: 'Neophyte',
-                    }),
+                    items: sections('/equipment/scrolls', scrollCategories),
                 },
             ],
         },
@@ -172,6 +148,6 @@ export const site: Site = {
         ],
     },
     footer: {
-        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin 2002-03 unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten and the Whispers In Akarra Development Team. The Javascript menu is copyright Twin Helix Designs. Please see the [Special Thanks](/thanks) page for more information.',
+        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin 2002-03 unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten and the Whispers In Akarra Development Team. Please see the [Special Thanks](/thanks) page for more information.',
     },
 };

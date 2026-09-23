@@ -2,13 +2,6 @@ This is supposed to be a helpful guide to fellowship playing and general behavio
 
 _(during this guide I will refer to fellowship as FS)_
 
-**Table of Contents**
-
-1. [Find people to fellowship with](#find-people-to-fellowship-with)
-2. [Fellowship behavior](#fs-behavior)
-3. [Fellowships and experience](#fellowships-and-experience)
-4. [Different roles in a fellowship](#different-roles-in-a-fellowship)
-
 ## Find people to fellowship with
 
 Naturally, a fellowship with just one person is rather pointless. The more, the merrier, and everyone should try to the the merriest :)

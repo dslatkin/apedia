@@ -265,7 +265,7 @@ export const alpha1: ScreenshotGallery = {
                     alternates: [
                         {
                             label: 'with names',
-                            href: '/images/screenshots/large/flameattack/calmingdown2.jpg',
+                            full: '/images/screenshots/large/flameattack/calmingdown2.jpg',
                         },
                     ],
                 },
@@ -294,11 +294,11 @@ export const alpha1: ScreenshotGallery = {
                     alternates: [
                         {
                             label: '2nd screenshot',
-                            href: '/images/screenshots/large/flameattack/annoyingbees2.jpg',
+                            full: '/images/screenshots/large/flameattack/annoyingbees2.jpg',
                         },
                         {
                             label: '3rd screenshot',
-                            href: '/images/screenshots/large/flameattack/annoyingbees3.jpg',
+                            full: '/images/screenshots/large/flameattack/annoyingbees3.jpg',
                         },
                     ],
                 },

@@ -13,6 +13,7 @@ export { armor } from './equipment/armor';
 export { items } from './equipment/items';
 export { scrolls } from './equipment/scrolls';
 export { weapons } from './equipment/weapons';
+export * from './equipment/categories';
 export * from './guides';
 export { newsPosts } from './news';
 export * from './screenshots';

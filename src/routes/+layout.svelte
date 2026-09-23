@@ -1,7 +1,14 @@
 <script lang="ts">
+    import SiteFooter from '$lib/components/site/SiteFooter.svelte';
+    import SiteHeader from '$lib/components/site/SiteHeader.svelte';
+    import type { LayoutProps } from './$types';
     import './layout.css';
 
-    let { children } = $props();
+    let { data, children }: LayoutProps = $props();
 </script>
 
-{@render children()}
+<SiteHeader title={data.siteTitle} menus={data.menus} />
+<main>
+    {@render children()}
+</main>
+<SiteFooter noticeHtml={data.footerHtml} />

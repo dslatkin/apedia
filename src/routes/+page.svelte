@@ -1,37 +1,37 @@
 <script lang="ts">
-    import { asset } from '$app/paths';
+    import { resolve } from '$app/paths';
+    import NewsArticle from '$lib/components/news/NewsArticle.svelte';
+    import PageHeader from '$lib/components/PageHeader.svelte';
+    import PictureLink from '$lib/components/PictureLink.svelte';
+    import type { Picture } from '$types';
     import { onMount } from 'svelte';
+    import type { PageProps } from './$types';
 
-    type Weapon = {
-        filename: string;
-        alt: string;
-    };
+    let { data }: PageProps = $props();
 
-    const weapons: Weapon[] = [
-        { filename: 'berdiche.jpg', alt: 'berdiche' },
-        { filename: 'claymore.jpg', alt: 'claymore' },
-        { filename: 'falchion.gif', alt: 'falchion' },
-        { filename: 'flamberge.jpg', alt: 'flamberge' },
-        { filename: 'gladius.jpg', alt: 'gladius' },
-        { filename: 'khyber.jpg', alt: 'khyber' },
-        { filename: 'rapier.jpg', alt: 'rapier' },
-        { filename: 'rapierparts.jpg', alt: 'rapierparts' },
-        { filename: 'stiletto.jpg', alt: 'stiletto' },
-        { filename: 'tegha.jpg', alt: 'tegha' },
-    ];
-
-    // Pick in the browser only, so the prerendered page doesn't show one weapon and then swap it.
-    let weapon = $state<Weapon>();
+    // Picked in the browser only, so the prerendered page doesn't show one weapon and then swap it.
+    let weapon = $state<Picture>();
     onMount(() => {
-        weapon = weapons[Math.floor(Math.random() * weapons.length)];
+        const { randomWeapons } = data;
+        weapon =
+            randomWeapons[Math.floor(Math.random() * randomWeapons.length)];
     });
 </script>
 
-{#if weapon}
-    <a href={asset(`/images/pics/large/${weapon.filename}`)} target="_blank">
-        <img
-            src={asset(`/images/pics/thumbnail/${weapon.filename}`)}
-            alt="A {weapon.alt}"
-        />
-    </a>
-{/if}
+<PageHeader title={data.title} />
+
+<aside aria-labelledby="random-weapon">
+    <h2 id="random-weapon">Random Weapon</h2>
+    {#if weapon}
+        <PictureLink picture={weapon} />
+        <p>Click the picture for an enlargement.</p>
+    {/if}
+</aside>
+
+<p>Current known items in the database: {data.itemCount}</p>
+
+{#each data.posts as post (post.date)}
+    <NewsArticle {post} />
+{/each}
+
+<p><a href={resolve('/news')}>Older news</a></p>

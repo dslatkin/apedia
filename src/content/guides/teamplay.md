@@ -2,13 +2,6 @@ Written by Braiba, this guide will explain the basic overview and mechanics of t
 
 _During this guide I will refer to Whispers In Akarra as "WiA"._
 
-**Table of Contents**
-
-1. [Fellowships](#fellowships)
-2. [Clans](#clans)
-3. [Guilds](#guilds)
-4. [Player vs Player](#player-vs-player)
-
 ## Fellowships
 
 ### General Info

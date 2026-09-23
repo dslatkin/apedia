@@ -1,4 +1,4 @@
-import type { Markdown, Picture } from './common';
+import type { Href, Markdown, Picture } from './common';
 
 /** Top-level description of the site: the navigation tree and the pieces shared by every page. */
 export interface Site {
@@ -20,8 +20,7 @@ export type NavItem = NavLink | NavMenu;
 
 export interface NavLink {
     label: string;
-    /** Internal route (may include a `#fragment`) or an external URL. */
-    href: string;
+    href: Href;
 }
 
 export interface HomePage {
