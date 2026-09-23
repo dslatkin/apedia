@@ -1,6 +1,10 @@
-.DS_Store
-node_modules
+# Package Managers
 package-lock.json
-/.svelte-kit
-/static
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+bun.lockb
+
+# Miscellaneous
+/static/
 /src/app.html
