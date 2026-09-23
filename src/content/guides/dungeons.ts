@@ -1,4 +1,4 @@
-import type { Dungeon } from '../../types';
+import type { Dungeon } from '$types';
 
 /** Dungeons, alphabetical. */
 export const dungeons: Dungeon[] = [

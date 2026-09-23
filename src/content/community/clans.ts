@@ -1,4 +1,4 @@
-import type { ClanDirectory } from '../../types';
+import type { ClanDirectory } from '$types';
 
 export const clanDirectory: ClanDirectory = {
     intro: `Clans have developed and changed since the first day of the first clan of the first group of individuals. Each clan strides to be their best in their own way. Many have different goals, are Allied others, and are even major enemies of eachother.

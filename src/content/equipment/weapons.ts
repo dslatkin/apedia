@@ -1,4 +1,4 @@
-import type { Weapon } from '../../types';
+import type { Weapon } from '$types';
 
 /** Weapons, grouped by category in the order the site listed them (weakest first). */
 export const weapons: Weapon[] = [

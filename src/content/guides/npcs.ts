@@ -1,4 +1,4 @@
-import type { Npc } from '../../types';
+import type { Npc } from '$types';
 
 /** Non-player characters, alphabetical. */
 export const npcs: Npc[] = [

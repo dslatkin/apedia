@@ -1,4 +1,4 @@
-import type { Scroll } from '../../types';
+import type { Scroll } from '$types';
 
 /** Skill scrolls, grouped by the class that can read them. */
 export const scrolls: Scroll[] = [

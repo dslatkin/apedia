@@ -1,4 +1,4 @@
-import type { Accessory } from '../../types';
+import type { Accessory } from '$types';
 
 /** Necklaces and rings. */
 export const accessories: Accessory[] = [

@@ -1,4 +1,4 @@
-import type { Obelisk } from '../../types';
+import type { Obelisk } from '$types';
 
 /** Respawn obelisks, ordered west to east. The Forgotten Burrow one is underground, inside the dungeon. */
 export const obelisks: Obelisk[] = [

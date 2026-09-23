@@ -1,4 +1,4 @@
-import type { MarkdownPage } from '../../types';
+import type { MarkdownPage } from '$types';
 import contact from './contact.md?raw';
 import thanks from './thanks.md?raw';
 

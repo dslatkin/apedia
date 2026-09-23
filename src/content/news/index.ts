@@ -1,4 +1,4 @@
-import type { IsoDate, NewsPost } from '../../types';
+import type { IsoDate, NewsPost } from '$types';
 
 // One Markdown file per post, named by its date.
 const files = import.meta.glob<string>('./posts/*.md', {

@@ -1,4 +1,4 @@
-import type { ClassTree } from '../../types';
+import type { ClassTree } from '$types';
 
 export const classTree: ClassTree = {
     intro: "There are many classes to choose from in Whispers in Akarra. Not only that, but it's a good idea to keep a long list of them, handy from time to time. On this page are all the classes, along with their requirements and skills.",

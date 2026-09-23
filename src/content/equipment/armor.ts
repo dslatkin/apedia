@@ -1,4 +1,4 @@
-import type { Armor } from '../../types';
+import type { Armor } from '$types';
 
 /** Armor, grouped by slot in the order the site listed them (lowest armor class first). */
 export const armor: Armor[] = [

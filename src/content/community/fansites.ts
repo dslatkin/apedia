@@ -1,4 +1,4 @@
-import type { Fansite } from '../../types';
+import type { Fansite } from '$types';
 
 export const fansites: Fansite[] = [
     {

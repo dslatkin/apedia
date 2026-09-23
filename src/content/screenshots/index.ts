@@ -1,4 +1,4 @@
-import type { ScreenshotGallery } from '../../types';
+import type { ScreenshotGallery } from '$types';
 import { alpha1 } from './a1';
 import { preAlpha13 } from './pa13';
 

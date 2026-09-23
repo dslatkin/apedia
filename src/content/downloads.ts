@@ -1,4 +1,4 @@
-import type { Download } from '../types';
+import type { Download } from '$types';
 
 // File sizes are measured from the files in static/. The old page listed 390,437 bytes for both
 // Pre-Alpha 12d files, which was a copy-and-paste mistake.

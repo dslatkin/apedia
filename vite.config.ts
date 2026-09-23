@@ -13,6 +13,10 @@ export default defineConfig({
                         : true,
             },
             adapter: adapter(),
+            alias: {
+                $types: 'src/types',
+                $content: 'src/content',
+            },
         }),
     ],
 });

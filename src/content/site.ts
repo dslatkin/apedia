@@ -1,4 +1,4 @@
-import type { NavLink, Picture, Site } from '../types';
+import type { NavLink, Picture, Site } from '$types';
 
 function sections(route: string, labels: Record<string, string>): NavLink[] {
     return Object.entries(labels).map(([id, label]) => ({

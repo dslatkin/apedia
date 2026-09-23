@@ -1,4 +1,4 @@
-import type { MarkdownPage } from '../../types';
+import type { MarkdownPage } from '$types';
 import fellowships from './fellowships.md?raw';
 import gettingStarted from './getting-started.md?raw';
 import teamplay from './teamplay.md?raw';

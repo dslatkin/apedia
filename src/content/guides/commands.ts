@@ -1,4 +1,4 @@
-import type { CommandReference } from '../../types';
+import type { CommandReference } from '$types';
 
 export const commandReference: CommandReference = {
     intro: `WiA has many commands and shortcut keys at your disposal. Every command is preceded with a "/" forward slash. Below is a list of every command and shortcut.

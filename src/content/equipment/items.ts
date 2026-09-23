@@ -1,4 +1,4 @@
-import type { Item } from '../../types';
+import type { Item } from '$types';
 
 /** Everything else that can be carried, grouped by category. */
 export const items: Item[] = [

@@ -1,4 +1,4 @@
-import type { ScreenshotGallery } from '../../types';
+import type { ScreenshotGallery } from '$types';
 
 export const preAlpha13: ScreenshotGallery = {
     slug: 'pa13',
