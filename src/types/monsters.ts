@@ -6,7 +6,7 @@ export type Attitude = 'peaceful' | 'hostile' | 'cooperative' | 'slayer';
 /** Distances a monster can attack from. A monster can have more than one. */
 export type AttackRange = 'very-close' | 'close' | 'far';
 
-/** A spell a monster casts, or a creature it summons, and the color of magic used. */
+/** A spell a monster casts, a creature it summons, or another ability, and the color of magic involved. */
 export interface MonsterAbility {
     name: string;
     color?: SoulColor;
@@ -21,8 +21,8 @@ export interface Monster {
     attackRanges: AttackRange[];
     casts?: MonsterAbility[];
     summons?: MonsterAbility[];
-    /** Other notable behaviors, e.g. "Double Target Attack", "Darkness Emitting", "Stealth Mode". */
-    traits?: string[];
+    /** Other notable abilities, e.g. "Spider Poison I" (yellow), "Double Target Attack", "Stealth Mode". */
+    traits?: MonsterAbility[];
     /** Only appears when summoned during events or as a random spawn. */
     eventOnly?: boolean;
 }

@@ -18,3 +18,10 @@ export interface CharacterClass {
     /** Skills only this class can learn. */
     exclusiveSkills?: string[];
 }
+
+/** The Character Classes page. */
+export interface ClassTree {
+    intro: Markdown;
+    /** Parents come before their children, in the order the site listed them. */
+    classes: CharacterClass[];
+}

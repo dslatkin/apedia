@@ -6,7 +6,10 @@ export interface Command {
     name: string;
     /** Alternative forms, e.g. ["t"]. */
     aliases?: string[];
-    /** Placeholder arguments in order, e.g. ["NAME", "MESSAGE"]. */
+    /**
+     * Arguments in order, e.g. ["<NAME>", "<MESSAGE>"]. Placeholders are in angle brackets;
+     * a literal choice is written as alternatives, e.g. "level | email | position | stats".
+     */
     args?: string[];
     description: Markdown;
     /** Commands that have been removed from the game are still listed, marked as such. */
@@ -26,4 +29,11 @@ export interface Shortcut {
     /** Keys pressed together, e.g. ["CTRL", "A"]. */
     keys: string[];
     description: string;
+}
+
+/** The Commands page. */
+export interface CommandReference {
+    intro: Markdown;
+    groups: CommandGroup[];
+    shortcuts: Shortcut[];
 }
