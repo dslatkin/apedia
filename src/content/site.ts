@@ -50,13 +50,6 @@ export const site: Site = {
             ],
         },
         {
-            label: 'Downloads',
-            items: [
-                { label: 'Download Game', href: '/downloads#game' },
-                { label: 'Public Area Editor', href: '/downloads#editor' },
-            ],
-        },
-        {
             label: 'Guides',
             items: [
                 { label: 'Getting Started', href: '/guides/getting-started' },

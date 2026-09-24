@@ -1,7 +1,6 @@
 export { clanDirectory } from './community/clans';
 export { fansites } from './community/fansites';
 export { contactPage, thanksPage } from './contact';
-export { downloads } from './downloads';
 export { accessories } from './equipment/accessories';
 export { armor } from './equipment/armor';
 export { items } from './equipment/items';
