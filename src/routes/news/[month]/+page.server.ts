@@ -18,7 +18,6 @@ export const load: PageServerLoad = ({ params }) => {
         title: formatMonth(params.month),
         posts: posts.map((post) => ({
             date: post.date,
-            author: post.author,
             html: renderMarkdown(post.body).html,
         })),
     };

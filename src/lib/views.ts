@@ -14,7 +14,6 @@ import type {
 
 export interface NewsPostView {
     date: IsoDate;
-    author: string;
     html: string;
 }
 

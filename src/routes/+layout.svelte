@@ -19,7 +19,11 @@
     class="mx-auto max-w-4xl divide-y divide-black border-black bg-gray-light sm:my-4 sm:border md:my-8"
 >
     <SiteHeader title={data.siteTitle} menus={data.menus} />
-    <main id="content" class="px-3 py-5 sm:px-6 sm:py-6 md:px-8 md:py-8">
+    <!-- The gutters are variables so a page can bleed past them, e.g. `-mx-(--gutter-x)`. -->
+    <main
+        id="content"
+        class="px-(--gutter-x) py-(--gutter-y) [--gutter-x:--spacing(3)] [--gutter-y:--spacing(5)] sm:[--gutter-x:--spacing(6)] sm:[--gutter-y:--spacing(6)] md:[--gutter-x:--spacing(8)] md:[--gutter-y:--spacing(8)]"
+    >
         {@render children()}
     </main>
     <SiteFooter noticeHtml={data.footerHtml} banner={data.footerBanner} />

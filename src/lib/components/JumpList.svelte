@@ -13,7 +13,7 @@
 
 <nav
     aria-label={label}
-    class="-mx-3 border-y border-black bg-gray-light px-3 py-2 sm:-mx-6 sm:px-6 md:sticky md:top-0 md:z-10 md:-mx-8 md:px-8"
+    class="-mx-(--gutter-x) border-y border-black bg-gray-light px-(--gutter-x) py-2 md:sticky md:top-0 md:z-10"
 >
     <ul
         class="flex flex-wrap justify-center gap-x-2 gap-y-1 text-sm [&>li:not(:last-child)]:after:ml-2 [&>li:not(:last-child)]:after:content-['|']"

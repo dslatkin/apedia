@@ -15,7 +15,6 @@ export const load: PageServerLoad = () => ({
     title: 'Current News',
     posts: newsPosts.slice(0, LATEST_POSTS).map((post) => ({
         date: post.date,
-        author: post.author,
         html: renderMarkdown(post.body).html,
     })),
     randomWeapons: site.home.randomWeapons,

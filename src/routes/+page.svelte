@@ -18,24 +18,17 @@
     });
 </script>
 
-<PageHeader title={data.title} />
-
-<!-- News on the left with the random weapon beside it, as on the old home page. -->
-<div class="md:grid md:grid-cols-4 md:items-start md:gap-8">
-    <aside
-        aria-labelledby="random-weapon"
-        class="flex flex-col items-center gap-3 border border-black bg-green-light p-4 text-center md:col-start-4 md:row-start-1"
-    >
-        <h2 id="random-weapon" class="font-bold uppercase">Random Weapon</h2>
-        {#if weapon}
-            <PictureLink picture={weapon} />
-            <p class="text-xs">Click the picture for an enlargement.</p>
-        {/if}
-    </aside>
-
-    <div class="mt-6 md:col-span-3 md:col-start-1 md:row-start-1 md:mt-0">
-        <p class="border border-black bg-teal px-3 py-2 text-sm font-bold">
-            Current known items in the database: {data.itemCount}
+<!--
+    As on the old home page, the news and the random weapon are two columns filling the
+    whole content area, split by a black line. It bleeds past the gutters of <main>, and
+    each column brings its own padding. On small screens the weapon follows the news.
+-->
+<div class="-mx-(--gutter-x) -my-(--gutter-y) md:grid md:grid-cols-3">
+    <div class="px-(--gutter-x) py-(--gutter-y) md:col-span-2">
+        <PageHeader title={data.title} />
+        <p>
+            <strong>Current known items in the database:</strong>
+            {data.itemCount}
         </p>
         <div class="mt-6">
             {#each data.posts as post (post.date)}
@@ -44,4 +37,18 @@
         </div>
         <p class="mt-8"><a href={resolve('/news')}>Older news</a></p>
     </div>
+
+    <aside
+        aria-labelledby="random-weapon"
+        class="flex flex-col items-center gap-4 border-t border-black bg-green-light px-4 py-6 text-center md:border-t-0 md:border-l"
+    >
+        <h2 id="random-weapon" class="text-xl font-bold uppercase">
+            Random Weapon
+        </h2>
+        {#if weapon}
+            <!-- The thumbnails are small; enlarged a little to fill the column as they did before. -->
+            <PictureLink picture={weapon} class="[zoom:1.25]" />
+            <p class="font-bold">(Click the picture for an enlargement)</p>
+        {/if}
+    </aside>
 </div>

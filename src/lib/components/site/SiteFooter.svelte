@@ -10,9 +10,9 @@
     }: { noticeHtml: string; banner?: FooterBanner | undefined } = $props();
 </script>
 
-<footer class="bg-white px-3 py-6 text-center text-xs sm:px-6 md:px-8">
+<footer class="bg-white px-3 py-8 text-center text-sm sm:px-6 md:px-8 md:py-10">
     {#if banner}
-        <p class="mb-5">
+        <p class="mb-6">
             <a
                 href={banner.href}
                 rel="external"
@@ -28,5 +28,5 @@
             </a>
         </p>
     {/if}
-    <Prose html={noticeHtml} class="mx-auto max-w-prose leading-normal" />
+    <Prose html={noticeHtml} class="leading-normal" />
 </footer>
