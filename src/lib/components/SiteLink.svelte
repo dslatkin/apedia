@@ -10,14 +10,18 @@
      * prefixed, which is what `resolve()` does for a pathname; `resolve()` itself is typed
      * per route, so it cannot take a link that may point at any route.
      */
-    let { href, children }: { href: Href; children: Snippet } = $props();
+    let {
+        href,
+        class: className,
+        children,
+    }: { href: Href; class?: string | undefined; children: Snippet } = $props();
 </script>
 
 {#if isExternal(href)}
-    <a {href} rel="external">{@render children()}</a>
+    <a {href} rel="external" class={className}>{@render children()}</a>
 {:else if isFragment(href)}
-    <a href="#{href.slice(1)}">{@render children()}</a>
+    <a href="#{href.slice(1)}" class={className}>{@render children()}</a>
 {:else}
     <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- see above -->
-    <a href="{base}{href}">{@render children()}</a>
+    <a href="{base}{href}" class={className}>{@render children()}</a>
 {/if}

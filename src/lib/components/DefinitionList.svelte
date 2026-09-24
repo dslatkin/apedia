@@ -11,20 +11,25 @@
     import LinkList from './LinkList.svelte';
     import ValueList from './ValueList.svelte';
 
-    /** Facts about one thing, e.g. a download's version and size or a clan's tag and allies. */
+    /**
+     * Facts about one thing, e.g. a download's version and size or a clan's tag and allies,
+     * laid out like the old two-column tables.
+     */
     let { entries }: { entries: DefinitionEntry[] } = $props();
 </script>
 
-<dl>
+<dl
+    class="grid grid-cols-1 gap-px border border-black bg-black text-sm sm:grid-cols-[max-content_1fr]"
+>
     {#each entries as entry (entry.term)}
-        <dt>{entry.term}</dt>
-        <dd>
+        <dt class="bg-green-dark px-3 py-2 font-bold">{entry.term}</dt>
+        <dd class="bg-teal px-3 py-2">
             {#if 'text' in entry}
                 {entry.text}
             {:else if 'list' in entry}
                 <ValueList items={entry.list} />
             {:else}
-                <LinkList links={entry.links} />
+                <LinkList links={entry.links} class="list-none pl-0" />
             {/if}
         </dd>
     {/each}

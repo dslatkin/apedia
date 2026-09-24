@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Command } from '$types';
 
-    /** How a command is typed, e.g. `/tell or /t <NAME> <MESSAGE>`, marked when removed. */
+    /** How a command is typed, e.g. `/tell or /t <NAME> <MESSAGE>`, in red when removed as on the old page. */
     let {
         command,
     }: { command: Pick<Command, 'name' | 'aliases' | 'args' | 'removed'> } =
@@ -11,7 +11,7 @@
 </script>
 
 {#snippet signature()}
-    <code>
+    <code class="font-mono text-sm font-bold">
         {#each forms as form, index (form)}
             {#if index > 0}or{/if}
             /{form}
@@ -23,7 +23,8 @@
 {/snippet}
 
 {#if command.removed}
-    <del>{@render signature()}</del> (removed)
+    <del class="text-red">{@render signature()}</del>
+    <span class="text-xs">(removed)</span>
 {:else}
     {@render signature()}
 {/if}

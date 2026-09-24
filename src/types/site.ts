@@ -1,4 +1,11 @@
-import type { Href, Markdown, Picture } from './common';
+import type {
+    ExternalUrl,
+    Href,
+    Image,
+    Markdown,
+    Picture,
+    SitePath,
+} from './common';
 
 /** Top-level description of the site: the navigation tree and the pieces shared by every page. */
 export interface Site {
@@ -12,6 +19,8 @@ export interface Site {
 /** A top-level menu (News, Screenshots, Downloads, Guides, Equipment, Community, Contact). */
 export interface NavMenu {
     label: string;
+    /** The page a nested menu's entries are sections of, e.g. Weapons for its categories. */
+    href?: SitePath;
     items: NavItem[];
 }
 
@@ -31,4 +40,11 @@ export interface HomePage {
 export interface Footer {
     /** Copyright and credit notice. */
     notice: Markdown;
+    /** A banner linking to another site, as fansites of the time traded. */
+    banner?: FooterBanner;
+}
+
+export interface FooterBanner {
+    image: Image;
+    href: ExternalUrl;
 }

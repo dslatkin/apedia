@@ -23,5 +23,12 @@
     ]);
 </script>
 
-<p><a href={asset(download.file)}>Download {download.fileName}</a></p>
+<p class="mb-4 text-center">
+    <a
+        href={asset(download.file)}
+        class="inline-block border border-black bg-green-dark px-5 py-2 font-bold text-black uppercase no-underline hover:bg-blue hover:text-white"
+    >
+        Download now
+    </a>
+</p>
 <DefinitionList {entries} />

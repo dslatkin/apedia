@@ -3,7 +3,7 @@
     import type { Image } from '$types';
 
     /**
-     * The name of an entry beside its in-game picture(s), with an optional badge such as
+     * The name of an entry under its in-game picture(s), with an optional badge such as
      * "Unique". Used as the row header of data tables.
      */
     let {
@@ -13,10 +13,20 @@
     }: { name: string; images: Image[]; badge?: string | undefined } = $props();
 </script>
 
-{#each images as image (image.src)}
-    <img src={asset(image.src)} alt={image.alt} />
-{/each}
-<span>{name}</span>
-{#if badge}
-    <span>({badge})</span>
-{/if}
+<span class="flex flex-col items-center gap-1">
+    {#if images.length}
+        <span class="flex flex-wrap justify-center gap-1">
+            {#each images as image (image.src)}
+                <img
+                    src={asset(image.src)}
+                    alt={image.alt}
+                    class="inline-block"
+                />
+            {/each}
+        </span>
+    {/if}
+    <span class="font-bold">{name}</span>
+    {#if badge}
+        <span class="text-xs italic">({badge})</span>
+    {/if}
+</span>

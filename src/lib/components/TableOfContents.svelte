@@ -22,9 +22,16 @@
     });
 </script>
 
-<nav aria-labelledby="table-of-contents">
-    <h2 id="table-of-contents">Table of Contents</h2>
-    <ol>
+<nav
+    aria-labelledby="table-of-contents"
+    class="my-6 border border-black bg-teal p-4 sm:p-5"
+>
+    <h2 id="table-of-contents" class="mb-2 font-bold uppercase">
+        Table of Contents
+    </h2>
+    <ol
+        class="list-decimal pl-6 [&_li]:my-1 [&_ol]:list-[lower-alpha] [&_ol]:pl-6"
+    >
         {#each entries as { heading, children } (heading.id)}
             <li>
                 <a href="#{heading.id}">{heading.text}</a>

@@ -28,3 +28,11 @@
 
 Both functions are listed in `tailwindCSS.classFunctions` in `.vscode/settings.json`, and
 `prettier-plugin-tailwindcss` sorts the classes inside them.
+
+## Colors
+
+The old site's palette is defined as theme tokens in `src/routes/layout.css` (`gray-dark`,
+`gray-light`, `green-light`, `green-dark`, `teal`, `purple`, `blue`, `orange`, `red`, plus
+`black` and `white`). Use those, e.g. `bg-teal` or `border-black`, rather than Tailwind's
+default palette, so the design stays on the site's colors. Everything else uses Tailwind's
+default scales and breakpoints.

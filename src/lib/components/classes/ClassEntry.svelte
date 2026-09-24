@@ -36,6 +36,6 @@
 </script>
 
 {#if characterClass.descriptionHtml}
-    <Prose html={characterClass.descriptionHtml} />
+    <Prose html={characterClass.descriptionHtml} class="mb-3" />
 {/if}
 <DefinitionList {entries} />

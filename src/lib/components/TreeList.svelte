@@ -27,6 +27,9 @@
     {/if}
 {/snippet}
 
-<nav aria-label={label}>
+<nav
+    aria-label={label}
+    class="my-6 border border-black bg-teal p-4 sm:p-5 [&_li]:my-1 [&_ul_ul]:ml-2 [&_ul_ul]:border-l [&_ul_ul]:border-black [&_ul_ul]:pl-4 [&>ul>li>a]:font-bold"
+>
     {@render branch(undefined)}
 </nav>

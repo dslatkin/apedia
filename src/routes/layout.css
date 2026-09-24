@@ -1,1 +1,29 @@
 @import 'tailwindcss';
+
+/* The colors the old pages used over and over, so they can be used as utilities like `bg-teal`. */
+@theme {
+    --color-gray-dark: #999999;
+    --color-gray-light: #cccccc;
+    --color-green-light: #cbffcb;
+    --color-green-dark: #339966;
+    --color-teal: #99cccc;
+    --color-purple: #ccccdd;
+    --color-blue: #6699cc;
+    --color-orange: #cc6600;
+    --color-red: #ff0000;
+}
+
+@layer base {
+    body {
+        @apply bg-gray-dark text-black;
+    }
+
+    /* Links were orange and underlined everywhere on the old site. */
+    a {
+        @apply text-orange underline;
+    }
+
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-blue;
+    }
+}

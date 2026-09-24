@@ -12,9 +12,11 @@
     const columns = ['Shortcut', 'Explanation'];
 </script>
 
-<DataTable {caption} {columns} rows={shortcuts}>
+<DataTable {caption} {columns} rows={shortcuts} variant="text">
     {#snippet row(shortcut)}
-        <th scope="row"><KeyCombo keys={shortcut.keys} /></th>
+        <th scope="row" class="whitespace-nowrap"
+            ><KeyCombo keys={shortcut.keys} /></th
+        >
         <td>{shortcut.description}</td>
     {/snippet}
 </DataTable>

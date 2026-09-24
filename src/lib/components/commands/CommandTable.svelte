@@ -13,9 +13,11 @@
     const columns = ['Command', 'Explanation'];
 </script>
 
-<DataTable {caption} {columns} rows={commands}>
+<DataTable {caption} {columns} rows={commands} variant="text">
     {#snippet row(command)}
-        <th scope="row"><CommandSignature {command} /></th>
-        <td><Prose html={command.descriptionHtml} /></td>
+        <th scope="row" class="whitespace-nowrap"
+            ><CommandSignature {command} /></th
+        >
+        <td><Prose html={command.descriptionHtml} class="leading-normal" /></td>
     {/snippet}
 </DataTable>

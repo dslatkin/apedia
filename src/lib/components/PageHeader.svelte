@@ -25,13 +25,13 @@
     <title>{title} – {page.data.siteTitle}</title>
 </svelte:head>
 
-<header>
-    <h1>{title}</h1>
+<header class="mb-6 md:mb-8">
+    <h1 class="text-2xl font-bold md:text-3xl">{title}</h1>
     {#if author}
-        <p>Written by {author}</p>
+        <p class="mt-1 text-sm italic">Written by {author}</p>
     {/if}
     {#if introHtml}
-        <Prose html={introHtml} />
+        <Prose html={introHtml} class="mt-4" />
     {/if}
     {@render children?.()}
 </header>

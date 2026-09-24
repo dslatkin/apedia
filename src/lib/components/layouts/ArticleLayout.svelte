@@ -6,7 +6,7 @@
 
     /**
      * A page of prose: guides, Contact Me, Special Thanks. Gets a table of contents when the
-     * body has more than one section.
+     * body has more than one section. Kept to a readable measure, as the old text columns were.
      */
     let {
         title,
@@ -23,7 +23,7 @@
     let sections = $derived(headings.filter((heading) => heading.level === 2));
 </script>
 
-<article>
+<article class="mx-auto max-w-prose">
     <PageHeader {title} {author} />
     {#if sections.length > 1}
         <TableOfContents {headings} />

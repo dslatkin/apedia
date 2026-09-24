@@ -5,7 +5,7 @@
 </script>
 
 {#if items.length}
-    <ul>
+    <ul class="space-y-0.5">
         {#each items as item, index (index)}
             <li>{item}</li>
         {/each}

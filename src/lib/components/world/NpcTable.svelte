@@ -22,9 +22,9 @@
                 Unknown
             {/if}
         </td>
-        <td>
+        <td class="text-left">
             {#if npc.notesHtml}
-                <Prose html={npc.notesHtml} />
+                <Prose html={npc.notesHtml} class="leading-normal" />
             {/if}
         </td>
     {/snippet}

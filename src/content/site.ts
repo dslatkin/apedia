@@ -71,6 +71,7 @@ export const site: Site = {
                 { label: 'Fellowships', href: '/guides/fellowships' },
                 {
                     label: 'Commands',
+                    href: '/guides/commands',
                     items: sections('/guides/commands', [
                         ...commandReference.groups.map(({ id, title }) => ({
                             id,
@@ -85,6 +86,7 @@ export const site: Site = {
                 { label: 'Obelisk Locations', href: '/guides/obelisks' },
                 {
                     label: 'Monsters',
+                    href: '/guides/monsters',
                     items: sections('/guides/monsters', monsterLevelBands),
                 },
             ],
@@ -94,14 +96,17 @@ export const site: Site = {
             items: [
                 {
                     label: 'Weapons',
+                    href: '/equipment/weapons',
                     items: sections('/equipment/weapons', weaponCategories),
                 },
                 {
                     label: 'Armor',
+                    href: '/equipment/armor',
                     items: sections('/equipment/armor', armorSlots),
                 },
                 {
                     label: 'Accessories',
+                    href: '/equipment/accessories',
                     items: sections(
                         '/equipment/accessories',
                         accessoryCategories,
@@ -109,10 +114,12 @@ export const site: Site = {
                 },
                 {
                     label: 'Items',
+                    href: '/equipment/items',
                     items: sections('/equipment/items', itemCategories),
                 },
                 {
                     label: 'Scrolls',
+                    href: '/equipment/scrolls',
                     items: sections('/equipment/scrolls', scrollCategories),
                 },
             ],
@@ -148,6 +155,13 @@ export const site: Site = {
         ],
     },
     footer: {
+        banner: {
+            image: {
+                src: '/images/akarrabanner.gif',
+                alt: 'Whispers In Akarra',
+            },
+            href: 'http://www.akarra.com/',
+        },
         notice: 'This website and its contents are copyright Danny "Talonz" Slatkin 2002-03 unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten and the Whispers In Akarra Development Team. Please see the [Special Thanks](/thanks) page for more information.',
     },
 };

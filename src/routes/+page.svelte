@@ -20,18 +20,28 @@
 
 <PageHeader title={data.title} />
 
-<aside aria-labelledby="random-weapon">
-    <h2 id="random-weapon">Random Weapon</h2>
-    {#if weapon}
-        <PictureLink picture={weapon} />
-        <p>Click the picture for an enlargement.</p>
-    {/if}
-</aside>
+<!-- News on the left with the random weapon beside it, as on the old home page. -->
+<div class="md:grid md:grid-cols-4 md:items-start md:gap-8">
+    <aside
+        aria-labelledby="random-weapon"
+        class="flex flex-col items-center gap-3 border border-black bg-green-light p-4 text-center md:col-start-4 md:row-start-1"
+    >
+        <h2 id="random-weapon" class="font-bold uppercase">Random Weapon</h2>
+        {#if weapon}
+            <PictureLink picture={weapon} />
+            <p class="text-xs">Click the picture for an enlargement.</p>
+        {/if}
+    </aside>
 
-<p>Current known items in the database: {data.itemCount}</p>
-
-{#each data.posts as post (post.date)}
-    <NewsArticle {post} />
-{/each}
-
-<p><a href={resolve('/news')}>Older news</a></p>
+    <div class="mt-6 md:col-span-3 md:col-start-1 md:row-start-1 md:mt-0">
+        <p class="border border-black bg-teal px-3 py-2 text-sm font-bold">
+            Current known items in the database: {data.itemCount}
+        </p>
+        <div class="mt-6">
+            {#each data.posts as post (post.date)}
+                <NewsArticle {post} />
+            {/each}
+        </div>
+        <p class="mt-8"><a href={resolve('/news')}>Older news</a></p>
+    </div>
+</div>
