@@ -28,15 +28,18 @@
     );
     /** A sub-menu, clipped away until its entry is hovered or holds focus. */
     const submenu = tw(
-        'pointer-events-none absolute z-20 h-px w-px divide-y divide-black overflow-hidden border border-black bg-purple text-black shadow-[4px_4px_0_#00000066] [clip:rect(0,0,0,0)] [li:is(:hover,:focus-within)>&]:pointer-events-auto [li:is(:hover,:focus-within)>&]:h-auto [li:is(:hover,:focus-within)>&]:w-max [li:is(:hover,:focus-within)>&]:min-w-40 [li:is(:hover,:focus-within)>&]:overflow-visible [li:is(:hover,:focus-within)>&]:[clip:auto]',
+        'pointer-events-none absolute z-20 h-px w-px divide-y divide-black overflow-hidden border border-black bg-purple text-black shadow-[4px_4px_0_#000000b3] [clip:rect(0,0,0,0)] [li:is(:hover,:focus-within)>&]:pointer-events-auto [li:is(:hover,:focus-within)>&]:h-auto [li:is(:hover,:focus-within)>&]:w-max [li:is(:hover,:focus-within)>&]:min-w-40 [li:is(:hover,:focus-within)>&]:overflow-visible [li:is(:hover,:focus-within)>&]:[clip:auto]',
     );
     /** Under the top-level label. */
     const dropdown = tw(
         'top-full left-0 supports-[anchor-name:--menu]:[top:anchor(bottom)] supports-[anchor-name:--menu]:[left:anchor(left)] supports-[anchor-name:--menu]:[position-anchor:--menu] supports-[anchor-name:--menu]:[position-try-fallbacks:flip-inline]',
     );
-    /** Beside the entry that opens it. */
+    /**
+     * Beside the entry that opens it. Raised a pixel so its top border lines up with the
+     * line above the entry, which belongs to the entry rather than its label.
+     */
     const flyout = tw(
-        'top-0 left-full supports-[anchor-name:--menu]:[top:anchor(top)] supports-[anchor-name:--menu]:[left:anchor(right)] supports-[anchor-name:--menu]:[position-anchor:--menu] supports-[anchor-name:--menu]:[position-try-fallbacks:flip-inline]',
+        'top-0 left-full -mt-px supports-[anchor-name:--menu]:[top:anchor(top)] supports-[anchor-name:--menu]:[left:anchor(right)] supports-[anchor-name:--menu]:[position-anchor:--menu] supports-[anchor-name:--menu]:[position-try-fallbacks:flip-inline]',
     );
 </script>
 
