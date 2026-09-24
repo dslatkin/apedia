@@ -24,7 +24,10 @@
             {:else if 'list' in entry}
                 <ValueList items={entry.list} />
             {:else}
-                <LinkList links={entry.links} class="list-none pl-0" />
+                <LinkList
+                    links={entry.links}
+                    class="list-none space-y-0.5 pl-0 [&>li]:my-0"
+                />
             {/if}
         </dd>
     {/each}
