@@ -1,6 +1,5 @@
 import type { Dungeon } from '$types';
 
-/** Dungeons, alphabetical. */
 export const dungeons: Dungeon[] = [
     {
         id: 'arag-darkling-pit',

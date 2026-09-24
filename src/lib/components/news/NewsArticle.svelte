@@ -3,7 +3,6 @@
     import type { NewsPostView } from '$lib/views';
     import Prose from '../Prose.svelte';
 
-    /** One dated news post. Posts have no titles, so the date is the heading. */
     let { post }: { post: NewsPostView } = $props();
 </script>
 

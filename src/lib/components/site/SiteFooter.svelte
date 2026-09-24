@@ -3,7 +3,6 @@
     import type { FooterBanner } from '$types';
     import Prose from '../Prose.svelte';
 
-    /** The copyright and credits notice shown at the bottom of every page, with the banner above it. */
     let {
         noticeHtml,
         banner,

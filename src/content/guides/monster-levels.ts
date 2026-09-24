@@ -1,6 +1,5 @@
 import type { LevelBand } from '$types';
 
-/** The bestiary is split into bands of 25 levels. */
 export const monsterLevelBands: LevelBand[] = [
     { id: 'levels-0-24', label: 'Levels 0 - 24', min: 0, max: 24 },
     { id: 'levels-25-49', label: 'Levels 25 - 49', min: 25, max: 49 },

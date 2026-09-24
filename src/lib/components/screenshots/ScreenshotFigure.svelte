@@ -4,7 +4,6 @@
     import PictureLink from '../PictureLink.svelte';
     import Prose from '../Prose.svelte';
 
-    /** A screenshot with its caption, extra views and credit. Fills a cell of the gallery grid. */
     let { screenshot }: { screenshot: ScreenshotView } = $props();
 </script>
 

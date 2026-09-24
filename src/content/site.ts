@@ -9,7 +9,6 @@ import {
 import { commandReference } from './guides/commands';
 import { monsterLevelBands } from './guides/monster-levels';
 
-/** Links to the sections of a page, e.g. each weapon category on the Weapons page. */
 function sections(route: SitePathname, categories: Category[]): NavLink[] {
     return categories.map(({ id, label }) => ({
         label,
@@ -25,11 +24,6 @@ function randomWeapon(file: string, name: string): Picture {
     };
 }
 
-/**
- * Routes follow the old drop-down menu. Section anchors on data pages are the category or
- * group ids from the content (e.g. weapon categories, command groups); monster level bands
- * are `levels-0-24`, `levels-25-49`, `levels-50-74` and `levels-75`.
- */
 export const site: Site = {
     title: 'Akarrian Encyclopedia',
     menus: [

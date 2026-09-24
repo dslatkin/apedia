@@ -1,6 +1,5 @@
 import type { Monster } from '$types';
 
-/** The bestiary, ordered by level. The site split it into bands of 25 levels (0-24, 25-49, 50-74, 75+). */
 export const monsters: Monster[] = [
     {
         id: 'black-rabbit',

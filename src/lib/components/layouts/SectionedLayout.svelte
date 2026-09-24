@@ -4,11 +4,6 @@
     import PageHeader from '../PageHeader.svelte';
     import Section from '../Section.svelte';
 
-    /**
-     * A page split into linkable sections with a jump list before them: the equipment
-     * pages, the bestiary, commands, screenshot galleries, clans, downloads. The page
-     * supplies what goes inside each section.
-     */
     let {
         title,
         author,

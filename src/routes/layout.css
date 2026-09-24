@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-/* The colors the old pages used over and over, so they can be used as utilities like `bg-teal`. */
 @theme {
     --color-gray-dark: #999999;
     --color-gray-light: #cccccc;
@@ -12,7 +11,6 @@
     --color-orange: #cc6600;
     --color-red: #ff0000;
 
-    /* The old site's font. Preflight uses --font-sans for the whole page. */
     --font-sans: Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -29,7 +27,6 @@
         @apply bg-gray-dark text-black;
     }
 
-    /* Links were orange and underlined everywhere on the old site. */
     a {
         @apply text-orange underline;
     }

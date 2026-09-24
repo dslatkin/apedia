@@ -3,11 +3,6 @@
     import { twMerge } from 'tailwind-merge';
     import Prose from './Prose.svelte';
 
-    /**
-     * A titled region of a page that can be linked to by its id: a weapon category, a
-     * gallery section, a clan, a month of news. The scroll margin keeps the heading clear
-     * of a sticky jump list.
-     */
     let {
         id,
         title,
@@ -17,7 +12,6 @@
     }: {
         id: string;
         title: string;
-        /** Heading level; sections nested inside another section use 3. */
         level?: 2 | 3;
         introHtml?: string | undefined;
         children: Snippet;

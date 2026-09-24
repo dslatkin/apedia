@@ -5,7 +5,6 @@
     import ValueList from '../ValueList.svelte';
     import RequirementsList from './RequirementsList.svelte';
 
-    /** The scrolls readable by one class. */
     let {
         scrolls,
         caption,

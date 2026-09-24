@@ -11,7 +11,6 @@ function describe(ability: MonsterAbility): string {
     return ability.color ? `${ability.name} (${ability.color})` : ability.name;
 }
 
-/** A monster's notable abilities as lines of text, the way the bestiary listed them. */
 export function describeAbilities(monster: Monster): string[] {
     const out: string[] = [];
     if (monster.casts)

@@ -3,11 +3,6 @@
     import type { Snippet } from 'svelte';
     import { twMerge } from 'tailwind-merge';
 
-    /**
-     * The shell of a data table: caption, column headers and body. The page supplies the
-     * cells of each row, using `<th scope="row">` for the cell that names the row. Cells
-     * are styled from here, so the domain tables only decide what goes in them.
-     */
     let {
         caption,
         columns,
@@ -19,11 +14,9 @@
         columns: string[];
         rows: T[];
         row: Snippet<[T]>;
-        /** `data` is the old look for stats, centred on teal; `text` suits prose, left-aligned on grey. */
         variant?: 'data' | 'text';
     } = $props();
 
-    /** The old tables were black with a 1px gap between cells, so every cell has a black outline. */
     const table = tw(
         'w-full border-separate border-spacing-px bg-black text-sm [&_tbody_th]:px-2 [&_tbody_th]:py-2 [&_tbody_th]:font-normal [&_td]:px-2 [&_td]:py-2 [&_thead_th]:bg-green-dark [&_thead_th]:px-2 [&_thead_th]:py-2 [&_thead_th]:align-middle [&_thead_th]:text-xs [&_thead_th]:font-bold [&_thead_th]:uppercase',
     );

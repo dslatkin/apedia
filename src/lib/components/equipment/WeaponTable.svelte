@@ -5,7 +5,6 @@
     import ValueList from '../ValueList.svelte';
     import RequirementsList from './RequirementsList.svelte';
 
-    /** The weapons of one category. Ranged weapons show their range instead of critical chances. */
     let {
         weapons,
         caption,

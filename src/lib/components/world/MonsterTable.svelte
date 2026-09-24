@@ -5,7 +5,6 @@
     import Nameplate from '../Nameplate.svelte';
     import ValueList from '../ValueList.svelte';
 
-    /** The monsters in one band of levels. */
     let {
         monsters,
         caption,

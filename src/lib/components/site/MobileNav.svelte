@@ -4,12 +4,6 @@
     import { twMerge } from 'tailwind-merge';
     import SiteLink from '../SiteLink.svelte';
 
-    /**
-     * The menus for small screens, built for touch and no script. The Menu button is the
-     * summary of a `<details>` element, so the menus open in place and push the page down.
-     * Each menu is a `<details>` too, sharing a `name` so only one is open at a time.
-     * Sub-menus keep the bar's color and are indented a step per level, as on the desktop.
-     */
     let { menus }: { menus: NavMenu[] } = $props();
 
     const summary = tw(
@@ -21,9 +15,7 @@
     const link = tw(
         'block py-2 pr-4 text-black no-underline hover:bg-blue hover:text-white',
     );
-    /** A heading for a group of links that isn't a link itself. */
     const groupLabel = tw('block py-2 pr-4 italic');
-    /** Left padding for each level of sub-menu. */
     const indent = [tw('pl-4'), tw('pl-8'), tw('pl-12'), tw('pl-16')];
 </script>
 
@@ -78,7 +70,6 @@
                     <details name="site-menu" class="group/menu">
                         <summary class={twMerge(summary, menuSummary)}>
                             {menu.label}
-                            <!-- A text caret, like the desktop menus', turned down when open. -->
                             <span
                                 aria-hidden="true"
                                 class="group-open/menu:rotate-90"

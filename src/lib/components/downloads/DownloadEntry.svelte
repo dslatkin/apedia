@@ -6,7 +6,6 @@
         type DefinitionEntry,
     } from '../DefinitionList.svelte';
 
-    /** One downloadable file with its details and mirrors. Shown inside its section. */
     let { download }: { download: Download } = $props();
 
     let entries = $derived<DefinitionEntry[]>([

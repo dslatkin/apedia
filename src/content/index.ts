@@ -1,9 +1,3 @@
-// Content for the Akarrian Encyclopedia, migrated from the legacy pages in old/.
-//
-// Data that the old site showed as tables lives in TypeScript modules typed with src/types.
-// Prose (news posts, guides, contact pages) lives in plain Markdown files next to them.
-// Images and downloads stay in static/ and are referenced by root-relative asset paths.
-
 export { clanDirectory } from './community/clans';
 export { fansites } from './community/fansites';
 export { contactPage, thanksPage } from './contact';

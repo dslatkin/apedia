@@ -4,7 +4,6 @@
     import MapCoordinates from '../MapCoordinates.svelte';
     import Nameplate from '../Nameplate.svelte';
 
-    /** Where each dungeon is and who may enter. */
     let {
         dungeons,
         caption,

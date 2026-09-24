@@ -4,7 +4,6 @@
     import type { NavMenu } from '$types';
     import SiteNav from './SiteNav.svelte';
 
-    /** The title banner, linking home, and the site's navigation. Shown at the top of every page. */
     let { title, menus }: { title: string; menus: NavMenu[] } = $props();
 </script>
 

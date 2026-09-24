@@ -3,7 +3,6 @@
     import type { Picture } from '$types';
     import { twMerge } from 'tailwind-merge';
 
-    /** A thumbnail that links to the full-size picture. */
     let {
         picture,
         class: className,

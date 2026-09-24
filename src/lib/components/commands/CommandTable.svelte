@@ -4,7 +4,6 @@
     import Prose from '../Prose.svelte';
     import CommandSignature from './CommandSignature.svelte';
 
-    /** One group of slash commands. */
     let {
         commands,
         caption,

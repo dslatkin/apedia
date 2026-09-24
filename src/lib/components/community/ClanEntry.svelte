@@ -5,7 +5,6 @@
         type DefinitionEntry,
     } from '../DefinitionList.svelte';
 
-    /** Everything known about one clan. Shown inside the clan's section. */
     let { clan }: { clan: ClanView } = $props();
 
     let entries = $derived.by(() => {

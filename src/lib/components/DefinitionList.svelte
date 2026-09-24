@@ -1,7 +1,6 @@
 <script module lang="ts">
     import type { Link } from '$types';
 
-    /** One row of a definition list: a term and either text, a list of values, or links. */
     export type DefinitionEntry = { term: string } & (
         { text: string } | { list: string[] } | { links: Link[] }
     );
@@ -11,10 +10,6 @@
     import LinkList from './LinkList.svelte';
     import ValueList from './ValueList.svelte';
 
-    /**
-     * Facts about one thing, e.g. a download's version and size or a clan's tag and allies,
-     * laid out like the old two-column tables.
-     */
     let { entries }: { entries: DefinitionEntry[] } = $props();
 </script>
 

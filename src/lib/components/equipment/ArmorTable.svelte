@@ -5,7 +5,6 @@
     import ValueList from '../ValueList.svelte';
     import RequirementsList from './RequirementsList.svelte';
 
-    /** The armor for one slot. */
     let { armor, caption }: { armor: Armor[]; caption?: string | undefined } =
         $props();
 

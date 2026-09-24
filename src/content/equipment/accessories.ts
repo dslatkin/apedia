@@ -1,6 +1,5 @@
 import type { Accessory } from '$types';
 
-/** Necklaces and rings. */
 export const accessories: Accessory[] = [
     {
         id: 'copper-wedding-necklace',

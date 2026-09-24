@@ -6,7 +6,6 @@
     import ValueList from '../ValueList.svelte';
     import RequirementsList from './RequirementsList.svelte';
 
-    /** The items of one category. A Notes column appears when any item has notes. */
     let {
         items,
         caption,

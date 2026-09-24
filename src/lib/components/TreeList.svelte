@@ -1,5 +1,4 @@
 <script module lang="ts">
-    /** A node in a tree of in-page links. Roots have no parent. */
     export interface TreeNode {
         id: string;
         label: string;
@@ -8,7 +7,6 @@
 </script>
 
 <script lang="ts">
-    /** Nested links to sections of the current page, e.g. the character class tree. */
     let { nodes, label = 'Tree' }: { nodes: TreeNode[]; label?: string } =
         $props();
 </script>

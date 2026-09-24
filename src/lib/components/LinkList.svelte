@@ -10,7 +10,6 @@
     import { twMerge } from 'tailwind-merge';
     import SiteLink from './SiteLink.svelte';
 
-    /** A list of links, each with an optional description: fansites, download mirrors, clan sites. */
     let {
         links,
         class: className,

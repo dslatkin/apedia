@@ -7,8 +7,6 @@ import type {
     WeaponCategory,
 } from '$types';
 
-// The groups each equipment page is split into, in the order the site listed them.
-
 export const weaponCategories: Category<WeaponCategory>[] = [
     { id: 'axes', label: 'Axes' },
     { id: 'crushing', label: 'Crushing' },

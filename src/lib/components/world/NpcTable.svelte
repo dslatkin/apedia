@@ -5,7 +5,6 @@
     import Nameplate from '../Nameplate.svelte';
     import Prose from '../Prose.svelte';
 
-    /** Where to find each non-player character. */
     let { npcs, caption }: { npcs: NpcView[]; caption?: string | undefined } =
         $props();
 

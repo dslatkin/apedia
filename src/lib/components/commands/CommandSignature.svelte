@@ -1,7 +1,6 @@
 <script lang="ts">
     import type { Command } from '$types';
 
-    /** How a command is typed, e.g. `/tell or /t <NAME> <MESSAGE>`, in red when removed as on the old page. */
     let {
         command,
     }: { command: Pick<Command, 'name' | 'aliases' | 'args' | 'removed'> } =

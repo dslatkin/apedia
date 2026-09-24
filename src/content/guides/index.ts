@@ -12,7 +12,6 @@ export { monsters } from './monsters';
 export { npcs } from './npcs';
 export { obelisks } from './obelisks';
 
-/** The guides written as prose, in menu order. Each is served at `/guides/<slug>`. */
 export const guides: MarkdownPage[] = [
     {
         slug: 'getting-started',

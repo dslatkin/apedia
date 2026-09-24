@@ -4,19 +4,8 @@
     import { twMerge } from 'tailwind-merge';
     import SiteLink from '../SiteLink.svelte';
 
-    /**
-     * The menu bar for wide screens, working as the old one did and with no script: a
-     * menu opens while the pointer is over it, and an entry with a sub-menu (marked `>`)
-     * opens that to its side. Only links can take focus; a focused link opens every menu
-     * above it, so the keyboard reaches everything by tabbing.
-     *
-     * A closed menu is clipped to a pixel rather than hidden, so its links stay in the tab
-     * order. Menus are placed with CSS anchor positioning, flipping to the other side at
-     * the edge of the viewport; browsers without it place them with `top-full`/`left-full`.
-     */
     let { menus }: { menus: NavMenu[] } = $props();
 
-    /** Any entry: highlighted while the pointer or focus is inside it, sub-menu included. */
     const item = tw(
         'relative [anchor-scope:--menu] focus-within:bg-blue focus-within:text-white hover:bg-blue hover:text-white',
     );
@@ -26,18 +15,12 @@
     const topLabel = tw(
         'block px-2 py-1.5 text-center whitespace-nowrap [anchor-name:--menu]',
     );
-    /** A sub-menu, clipped away until its entry is hovered or holds focus. */
     const submenu = tw(
         'pointer-events-none absolute z-20 h-px w-px divide-y divide-black overflow-hidden border border-black bg-purple text-black shadow-[4px_4px_0_#000000b3] [clip:rect(0,0,0,0)] [li:is(:hover,:focus-within)>&]:pointer-events-auto [li:is(:hover,:focus-within)>&]:h-auto [li:is(:hover,:focus-within)>&]:w-max [li:is(:hover,:focus-within)>&]:min-w-40 [li:is(:hover,:focus-within)>&]:overflow-visible [li:is(:hover,:focus-within)>&]:[clip:auto]',
     );
-    /** Under the top-level label. */
     const dropdown = tw(
         'top-full left-0 supports-[anchor-name:--menu]:[top:anchor(bottom)] supports-[anchor-name:--menu]:[left:anchor(left)] supports-[anchor-name:--menu]:[position-anchor:--menu] supports-[anchor-name:--menu]:[position-try-fallbacks:flip-inline]',
     );
-    /**
-     * Beside the entry that opens it. Raised a pixel so its top border lines up with the
-     * line above the entry, which belongs to the entry rather than its label.
-     */
     const flyout = tw(
         'top-0 left-full -mt-px supports-[anchor-name:--menu]:[top:anchor(top)] supports-[anchor-name:--menu]:[left:anchor(right)] supports-[anchor-name:--menu]:[position-anchor:--menu] supports-[anchor-name:--menu]:[position-try-fallbacks:flip-inline]',
     );

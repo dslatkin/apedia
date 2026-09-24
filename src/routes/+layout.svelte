@@ -19,11 +19,6 @@
     the frame's widths: `@5xl/page` is 64rem.
 -->
 <div class="@container/page">
-    <!--
-        The old pages were one bordered table: banner, menu bar, content and footer, with
-        black lines between them. From `@5xl/page` until `lg` the frame keeps only two
-        thirds of the margin the `md` container width would leave at each side.
-    -->
     <div
         class="container mx-auto divide-y divide-black border border-black bg-gray-light sm:my-4 md:my-8 @5xl/page:max-lg:w-[calc(100%/3+var(--breakpoint-md)*2/3)] @5xl/page:max-lg:max-w-none"
     >

@@ -16,7 +16,6 @@
         {#if gallery.introHtml}
             <Prose html={gallery.introHtml} class="mb-4" />
         {/if}
-        <!-- A black grid with a teal cell per screenshot, like the old tables, but as many across as fit. -->
         <ul
             class="grid gap-px border border-black bg-black sm:grid-cols-2 lg:grid-cols-3"
         >

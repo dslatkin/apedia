@@ -10,7 +10,6 @@ const gitignorePath = path.resolve(import.meta.dirname, '.gitignore');
 
 export default defineConfig(
     includeIgnoreFile(gitignorePath),
-    // Legacy site files, kept as-is
     globalIgnores(['old/']),
     js.configs.recommended,
     ts.configs.recommended,
@@ -36,8 +35,6 @@ export default defineConfig(
         },
     },
     {
-        // Override or add rule settings here, such as:
-        // 'svelte/button-has-type': 'error'
         rules: {},
     },
 );

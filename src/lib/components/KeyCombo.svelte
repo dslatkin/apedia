@@ -1,5 +1,4 @@
 <script lang="ts">
-    /** Keys pressed together, e.g. CTRL + A. */
     let { keys }: { keys: string[] } = $props();
 </script>
 

@@ -1,6 +1,5 @@
 import type { Npc } from '$types';
 
-/** Non-player characters, alphabetical. */
 export const npcs: Npc[] = [
     {
         id: 'alera-the-herbalist',

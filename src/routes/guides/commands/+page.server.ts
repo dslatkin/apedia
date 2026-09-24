@@ -4,7 +4,6 @@ import type { CommandView } from '$lib/views';
 import type { Shortcut } from '$types';
 import type { PageServerLoad } from './$types';
 
-/** The command groups, followed by the keyboard shortcuts as a section of their own. */
 type CommandSection = { id: string; title: string } & (
     { commands: CommandView[] } | { shortcuts: Shortcut[] }
 );

@@ -1,7 +1,6 @@
 import { capitalize } from '$lib/format';
 import type { Requirements } from '$types';
 
-/** Requirements as the site wrote them, e.g. "20 Strength", "Two-handed", "Gifted Only". */
 export function formatRequirements(requirements: Requirements): string[] {
     const { strength, agility, intelligence, faith, level } = requirements;
     const out: string[] = [];

@@ -5,7 +5,6 @@
     import ValueList from '../ValueList.svelte';
     import RequirementsList from './RequirementsList.svelte';
 
-    /** The necklaces or the rings. */
     let {
         accessories,
         caption,

@@ -9,7 +9,6 @@
 
     let { data }: PageProps = $props();
 
-    // Picked in the browser only, so the prerendered page doesn't show one weapon and then swap it.
     let weapon = $state<Picture>();
     onMount(() => {
         const { randomWeapons } = data;
@@ -18,12 +17,6 @@
     });
 </script>
 
-<!--
-    As on the old home page, the news and the random weapon are two columns filling the
-    whole content area, split by a black line. It bleeds past the gutters of <main>, and
-    each column brings its own padding. On small screens the weapon follows the news.
-    Until `lg` the frame is narrow, so the columns have less padding there.
--->
 <div
     class="-mx-(--gutter-x) -my-(--gutter-y) @5xl/page:grid @5xl/page:grid-cols-3"
 >
@@ -51,7 +44,6 @@
             Random Weapon
         </h2>
         {#if weapon}
-            <!-- The thumbnails are small; enlarged a little to fill the column as they did before. -->
             <PictureLink picture={weapon} class="[zoom:1.25]" />
             <p class="font-bold">(Click the picture for an enlargement)</p>
         {/if}

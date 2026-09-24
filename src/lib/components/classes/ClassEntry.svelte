@@ -5,7 +5,6 @@
     } from '../DefinitionList.svelte';
     import Prose from '../Prose.svelte';
 
-    /** One character class: its description, skills and requirements. Shown inside its section. */
     let { characterClass }: { characterClass: CharacterClassView } = $props();
 
     const TO_BE_DETERMINED = 'To be determined';

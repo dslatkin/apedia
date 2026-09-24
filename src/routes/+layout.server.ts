@@ -4,7 +4,6 @@ import type { LayoutServerLoad } from './$types';
 
 export const prerender = true;
 
-/** What every page needs: the site's name and menus for the header, and the footer. */
 export const load: LayoutServerLoad = () => ({
     siteTitle: site.title,
     menus: site.menus,

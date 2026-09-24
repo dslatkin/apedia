@@ -3,7 +3,6 @@
     import DataTable from '../DataTable.svelte';
     import KeyCombo from '../KeyCombo.svelte';
 
-    /** The keyboard shortcuts. */
     let {
         shortcuts,
         caption,

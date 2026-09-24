@@ -1,6 +1,3 @@
-// Shapes of content after a `load` function has rendered its Markdown fields to HTML.
-// Load functions build these; components take them as props.
-
 import type {
     CharacterClass,
     Command,
@@ -38,11 +35,9 @@ export interface CharacterClassView extends Omit<
     'description'
 > {
     descriptionHtml?: string | undefined;
-    /** Name of the class this one advances from. */
     parentName?: string | undefined;
 }
 
-/** A clan with its allies and enemies resolved to links. */
 export interface ClanView {
     id: string;
     name: string;

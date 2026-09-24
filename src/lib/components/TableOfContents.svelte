@@ -1,7 +1,6 @@
 <script lang="ts">
     import type { Heading } from '$lib/markdown';
 
-    /** An outline of a prose page, built from its level 2 and 3 headings. */
     let { headings }: { headings: Heading[] } = $props();
 
     interface Entry {

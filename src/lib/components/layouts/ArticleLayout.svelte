@@ -4,10 +4,6 @@
     import Prose from '../Prose.svelte';
     import TableOfContents from '../TableOfContents.svelte';
 
-    /**
-     * A page of prose: guides, Contact Me, Special Thanks. Gets a table of contents when the
-     * body has more than one section. Kept to a readable measure, as the old text columns were.
-     */
     let {
         title,
         author,

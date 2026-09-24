@@ -8,7 +8,6 @@ import { site } from '$content/site';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { PageServerLoad } from './$types';
 
-/** How many of the newest posts the home page shows. */
 const LATEST_POSTS = 5;
 
 export const load: PageServerLoad = () => ({

@@ -3,11 +3,6 @@
     import type { Snippet } from 'svelte';
     import Prose from './Prose.svelte';
 
-    /**
-     * The top of every page: its `<h1>`, a byline when a player wrote the page, an optional
-     * introduction, and anything else that belongs above the content. Also sets the
-     * document title.
-     */
     let {
         title,
         author,

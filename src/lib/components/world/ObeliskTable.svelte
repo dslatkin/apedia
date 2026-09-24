@@ -3,7 +3,6 @@
     import DataTable from '../DataTable.svelte';
     import MapCoordinates from '../MapCoordinates.svelte';
 
-    /** Where each respawn obelisk stands. */
     let {
         obelisks,
         caption,

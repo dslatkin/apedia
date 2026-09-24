@@ -2,10 +2,6 @@
     import { asset } from '$app/paths';
     import type { Image } from '$types';
 
-    /**
-     * The name of an entry under its in-game picture(s), with an optional badge such as
-     * "Unique". Used as the row header of data tables.
-     */
     let {
         name,
         images,
