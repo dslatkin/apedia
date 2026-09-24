@@ -25,13 +25,14 @@
      * anchor); the bar itself from `md` up.
      */
     const panel = tw(
-        'fixed inset-x-0 top-12 bottom-auto m-0 h-auto max-h-[calc(100dvh-3rem)] w-auto overflow-y-auto border-0 border-t border-black bg-purple p-0 text-black supports-[anchor-name:--menu]:[top:anchor(bottom)] md:static md:inset-auto md:flex md:max-h-none md:flex-wrap md:overflow-visible md:border-t-0',
+        'fixed inset-x-0 top-12 bottom-auto m-0 h-auto max-h-[calc(100dvh-3rem)] w-auto overflow-y-auto border-0 border-t border-black bg-purple p-0 text-black supports-[anchor-name:--menu]:[top:anchor(bottom)] md:static md:inset-auto md:flex md:max-h-none md:overflow-visible md:border-t-0',
     );
+    /** From `md` up the menus share the bar's width, each growing from its label's width. */
     const topItem = tw(
-        'border-t border-black first:border-t-0 md:border-t-0 md:border-r',
+        'border-t border-black first:border-t-0 md:flex-1 md:border-t-0',
     );
     const summary = tw(
-        'flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 font-bold select-none [anchor-name:--menu] group-open:bg-blue group-open:text-white hover:bg-blue hover:text-white md:py-2 [&::-webkit-details-marker]:hidden',
+        'flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 whitespace-nowrap select-none [anchor-name:--menu] group-open:bg-blue group-open:text-white hover:bg-blue hover:text-white md:justify-center md:gap-1 md:px-2 md:py-1.5 [&::-webkit-details-marker]:hidden',
     );
     /** A sub-menu: a list under its summary on small screens, a drop-down from `md` up. */
     const dropdown = tw(
