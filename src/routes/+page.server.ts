@@ -1,8 +1,3 @@
-import { accessories } from '$content/equipment/accessories';
-import { armor } from '$content/equipment/armor';
-import { items } from '$content/equipment/items';
-import { scrolls } from '$content/equipment/scrolls';
-import { weapons } from '$content/equipment/weapons';
 import { newsPosts } from '$content/news';
 import { site } from '$content/site';
 import { renderMarkdown } from '$lib/server/markdown';
@@ -17,10 +12,4 @@ export const load: PageServerLoad = () => ({
         html: renderMarkdown(post.body).html,
     })),
     randomWeapons: site.home.randomWeapons,
-    itemCount:
-        weapons.length +
-        armor.length +
-        accessories.length +
-        items.length +
-        scrolls.length,
 });

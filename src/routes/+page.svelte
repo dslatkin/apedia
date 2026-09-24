@@ -26,7 +26,7 @@
         <PageHeader title={data.title} />
         <p>
             <strong>Current known items in the database:</strong>
-            {data.itemCount}
+            392
         </p>
         <div class="mt-6">
             {#each data.posts as post (post.date)}
