@@ -11,7 +11,7 @@ const gitignorePath = path.resolve(import.meta.dirname, '.gitignore');
 export default defineConfig(
     includeIgnoreFile(gitignorePath),
     // Legacy site files, kept as-is
-    globalIgnores(['static/']),
+    globalIgnores(['old/']),
     js.configs.recommended,
     ts.configs.recommended,
     svelte.configs.recommended,

@@ -1,4 +1,4 @@
-// Content for the Akarrian Encyclopedia, migrated from the legacy pages in static/.
+// Content for the Akarrian Encyclopedia, migrated from the legacy pages in old/.
 //
 // Data that the old site showed as tables lives in TypeScript modules typed with src/types.
 // Prose (news posts, guides, contact pages) lives in plain Markdown files next to them.

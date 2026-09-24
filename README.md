@@ -15,8 +15,8 @@ I have since converted the "Apedia" as it was affectionately called to a static
 site hosted on Vercel, with the only _very minor_ change to the original code
 being to replace an old bit of PHP I had used to render a "cool random weapon"
 on the home page of the site. If you're curious about the old web, I encourage
-you to check out [the home page](/src/app.html) or [the drop-down
-menu](/static/scripts/menu.js).
+you to check out [the home page](/old/index.php) or [the drop-down
+menu](/old/scripts/menu.js).
 
 ## Screenshots
 
