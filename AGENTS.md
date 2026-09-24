@@ -36,3 +36,11 @@ The old site's palette is defined as theme tokens in `src/routes/layout.css` (`g
 `black` and `white`). Use those, e.g. `bg-teal` or `border-black`, rather than Tailwind's
 default palette, so the design stays on the site's colors. Everything else uses Tailwind's
 default scales and breakpoints.
+
+## Comments
+
+Keep comments to a minimum. Don't write comments that restate what names, types or props
+already say. Only comment when something would otherwise be confusing or easy to undo by
+mistake (for example, why a closed menu is clipped instead of hidden), or to preserve
+information that isn't recoverable from the code, such as history of the original site.
+Lint directives (`eslint-disable-next-line`) should carry their reason inline.
