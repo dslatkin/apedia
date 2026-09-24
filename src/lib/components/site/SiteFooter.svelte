@@ -13,11 +13,7 @@
 <footer class="bg-white px-3 py-8 text-center text-sm sm:px-6 md:px-8 md:py-10">
     {#if banner}
         <p class="mb-6">
-            <a
-                href={banner.href}
-                rel="external"
-                class="inline-block border border-black"
-            >
+            <a href={banner.href} rel="external" class="inline-block">
                 <img
                     src={asset(banner.image.src)}
                     alt={banner.image.alt}
