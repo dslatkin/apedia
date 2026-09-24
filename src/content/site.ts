@@ -37,16 +37,8 @@ export const site: Site = {
         {
             label: 'Screenshots',
             items: [
-                {
-                    label: 'PreAlpha',
-                    items: [
-                        { label: 'PreAlpha 13', href: '/screenshots/pa13' },
-                    ],
-                },
-                {
-                    label: 'Alpha',
-                    items: [{ label: 'Alpha 1', href: '/screenshots/a1' }],
-                },
+                { label: 'PreAlpha 13', href: '/screenshots/pa13' },
+                { label: 'Alpha 1', href: '/screenshots/a1' },
             ],
         },
         {
