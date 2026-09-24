@@ -4,6 +4,11 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+    // Fix dev container dev server
+    // https://vite.dev/guide/troubleshooting#dev-containers-vs-code-port-forwarding
+    server: {
+        host: '127.0.0.1',
+    },
     plugins: [
         tailwindcss(),
         sveltekit({
