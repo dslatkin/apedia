@@ -11,9 +11,20 @@
     --color-blue: #6699cc;
     --color-orange: #cc6600;
     --color-red: #ff0000;
+
+    /* The old site's font. Preflight uses --font-sans for the whole page. */
+    --font-sans: Verdana, Arial, Helvetica, sans-serif;
 }
 
 @layer base {
+    /*
+     * 14px by default, as a percentage so a reader's own browser setting still scales it.
+     * Tailwind's text sizes and spacing are in rem, so they scale with it.
+     */
+    html {
+        font-size: 87.5%;
+    }
+
     body {
         @apply bg-gray-dark text-black;
     }
