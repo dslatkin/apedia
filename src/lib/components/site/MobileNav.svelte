@@ -21,7 +21,8 @@
     const link = tw(
         'block py-2 pr-4 text-black no-underline hover:bg-blue hover:text-white',
     );
-    const groupLabel = tw('block py-2 pr-4 font-bold');
+    /** A heading for a group of links that isn't a link itself. */
+    const groupLabel = tw('block py-2 pr-4 italic');
     /** Left padding for each level of sub-menu. */
     const indent = [tw('pl-4'), tw('pl-8'), tw('pl-12'), tw('pl-16')];
 </script>
@@ -34,7 +35,7 @@
                     {#if entry.href}
                         <SiteLink
                             href={entry.href}
-                            class={twMerge(link, indent[depth], 'font-bold')}
+                            class={twMerge(link, indent[depth])}
                         >
                             {entry.label}
                         </SiteLink>
@@ -77,18 +78,13 @@
                     <details name="site-menu" class="group/menu">
                         <summary class={twMerge(summary, menuSummary)}>
                             {menu.label}
-                            <svg
-                                class="size-3 transition-transform group-open/menu:rotate-180"
-                                viewBox="0 0 12 12"
+                            <!-- A text caret, like the desktop menus', turned down when open. -->
+                            <span
                                 aria-hidden="true"
+                                class="group-open/menu:rotate-90"
                             >
-                                <path
-                                    d="M2 4l4 4 4-4"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                />
-                            </svg>
+                                &gt;
+                            </span>
                         </summary>
                         {@render entries(menu.items, 1)}
                     </details>

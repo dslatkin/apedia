@@ -8,8 +8,8 @@
     let { title, menus }: { title: string; menus: NavMenu[] } = $props();
 </script>
 
-<header class="divide-y divide-black">
-    <a href={resolve('/')} class="block bg-white">
+<header>
+    <a href={resolve('/')} class="block border-b border-black bg-white">
         <img
             src={asset('/images/title.jpg')}
             alt={title}
