@@ -20,6 +20,10 @@ export default defineConfig({
                         : true,
             },
             adapter: adapter(),
+            // The contact form's no-JS redirect needs the site's absolute URL at build time.
+            prerender: {
+                origin: 'https://apedia.talonz.com',
+            },
             alias: {
                 $types: 'src/types',
                 $content: 'src/content',

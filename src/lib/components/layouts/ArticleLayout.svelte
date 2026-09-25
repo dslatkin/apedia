@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Heading } from '$lib/markdown';
+    import type { Snippet } from 'svelte';
     import PageHeader from '../PageHeader.svelte';
     import Prose from '../Prose.svelte';
     import TableOfContents from '../TableOfContents.svelte';
@@ -9,11 +10,13 @@
         author,
         html,
         headings,
+        children,
     }: {
         title: string;
         author?: string | undefined;
         html: string;
         headings: Heading[];
+        children?: Snippet | undefined;
     } = $props();
 
     let sections = $derived(headings.filter((heading) => heading.level === 2));
@@ -25,4 +28,5 @@
         <TableOfContents {headings} />
     {/if}
     <Prose {html} />
+    {@render children?.()}
 </article>
