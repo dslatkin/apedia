@@ -1,9 +1,15 @@
 import type { ExternalUrl, IsoDate, Link, Markdown } from './common';
 
-export interface Fansite {
+export interface Website {
     name: string;
     url: ExternalUrl;
     description: string;
+}
+
+export interface WebsiteDirectory {
+    intro: Markdown;
+    active: Website[];
+    inactive: Website[];
 }
 
 export interface ClanDirectory {
