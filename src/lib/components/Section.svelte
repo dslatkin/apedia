@@ -18,7 +18,7 @@
     } = $props();
 </script>
 
-<section {id} class="mt-8 scroll-mt-4 md:mt-10 md:scroll-mt-16">
+<section {id} class="mt-8 scroll-mt-24 md:mt-10 md:scroll-mt-16">
     <svelte:element
         this={`h${level}`}
         class={twMerge(

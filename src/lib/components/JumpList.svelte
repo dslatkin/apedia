@@ -7,7 +7,7 @@
 
 <nav
     aria-label={label}
-    class="-mx-(--gutter-x) bg-gray-light/85 px-(--gutter-x) py-2 backdrop-blur-xs md:sticky md:top-0 md:z-10"
+    class="sticky top-0 z-10 -mx-(--gutter-x) bg-gray-light/85 px-(--gutter-x) py-2 backdrop-blur-xs"
 >
     <ul
         class="flex flex-wrap justify-center gap-x-2 gap-y-1 text-sm [&>li:not(:last-child)]:after:ml-2 [&>li:not(:last-child)]:after:content-['|']"
