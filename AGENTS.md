@@ -44,3 +44,12 @@ already say. Only comment when something would otherwise be confusing or easy to
 mistake (for example, why a closed menu is clipped instead of hidden), or to preserve
 information that isn't recoverable from the code, such as history of the original site.
 Lint directives (`eslint-disable-next-line`) should carry their reason inline.
+
+## Sharing the dev server
+
+To view the dev server from another device, run `npm run dev`, then `npm run tunnel:up` to
+open a Cloudflare quick tunnel and print its address. `npm run tunnel:status` shows the
+current address and `npm run tunnel:down` closes it; both commands are safe to repeat.
+
+Each tunnel gets a new random `*.trycloudflare.com` address, stored only in the git-ignored
+`.tunnel/` folder. Never commit a tunnel address or write it into a tracked file.
