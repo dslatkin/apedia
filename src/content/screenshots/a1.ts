@@ -4,7 +4,6 @@ export const alpha1: ScreenshotGallery = {
     slug: 'a1',
     title: 'Alpha 1',
     version: { stage: 'alpha', number: 1, label: 'A1' },
-    intro: 'Submit all screenshots to Talonz on IRC (server QuakeNet, #akarra) or at [buzzd24@charter.net](mailto:buzzd24@charter.net).',
     sections: [
         {
             id: 'normal',
