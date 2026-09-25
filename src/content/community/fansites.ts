@@ -7,19 +7,19 @@ export const fansites: Fansite[] = [
         description: 'The official website',
     },
     {
-        name: 'Akarra Warped',
+        name: 'Akarra Warped (dead link)',
         url: 'http://way.to/WiA',
         description:
             'A Whispers In Akarra site which also features cool ideas for new items',
     },
     {
-        name: 'Akarra Shrine',
-        url: 'http://hometown.aol.co.uk/saltrockboarder/Akarrashrine.html',
+        name: 'Akarra Shrine (archived)',
+        url: 'https://web.archive.org/web/20060518061628/http://hometown.aol.co.uk:80/saltrockboarder/Akarrashrine.html',
         description:
             'A Whispers In Akarra site (has not been updated for a while)',
     },
     {
-        name: "Sorcerer's Site",
+        name: "Sorcerer's Site (dead link)",
         url: 'http://www.sorcerer.de/akarra/',
         description: 'A new Akarra site developed by Sorcerer',
     },

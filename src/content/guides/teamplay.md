@@ -6,7 +6,7 @@ _During this guide I will refer to Whispers In Akarra as "WiA"._
 
 ### General Info
 
-Fellowships are the best way to increase your level in WiA and allow you to become part of the growing community. The big advantage of fellowships is that you can take down bigger monsters and reap the rewards in the form of experience as well as money. When you are in a fellowship with other people you get much less of an experience drop-off from enemies which are of a higher level than everyone in the group, allowing you to level up quickly and possibly gain a high rank on the 'Top 50 Fastest Level-50-Characters' table which can be found [here](http://akarra.planetqs.com/statistics.htm).
+Fellowships are the best way to increase your level in WiA and allow you to become part of the growing community. The big advantage of fellowships is that you can take down bigger monsters and reap the rewards in the form of experience as well as money. When you are in a fellowship with other people you get much less of an experience drop-off from enemies which are of a higher level than everyone in the group, allowing you to level up quickly and possibly gain a high rank on the 'Top 50 Fastest Level-50-Characters' table which can be found [here (archived)](https://web.archive.org/web/20030603222106/http://akarra.planetqs.com:80/statistics.html).
 
 ### Finding a Group
 

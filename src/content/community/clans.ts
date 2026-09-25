@@ -31,11 +31,11 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Level 45',
             links: [
                 {
-                    label: 'Website',
-                    href: 'http://www.chosenheroes.us/',
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20040102030038/http://chosenheroes.us:80/',
                 },
                 {
-                    label: 'Forums',
+                    label: 'Forums (dead link)',
                     href: 'http://www.chosenheroes.us/forums/',
                 },
             ],
@@ -59,8 +59,8 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Level 60',
             links: [
                 {
-                    label: 'Website',
-                    href: 'http://www.freewebs.com/akarralord/',
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20030808232926/http://www.freewebs.com:80/akarralord/',
                 },
             ],
             quote: {
@@ -78,8 +78,8 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Level 20, Activeness',
             links: [
                 {
-                    label: 'Website',
-                    href: 'http://www.phz.aractelnetworks.net/',
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20030805230558/http://www.phz.aractelnetworks.net:80/home/index.php',
                 },
             ],
             quote: {
@@ -109,8 +109,8 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Level 50',
             links: [
                 {
-                    label: 'Website',
-                    href: 'http://www.nolife.nu/koid.php',
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20030808205214/http://www.nolife.nu:80/koid.php',
                 },
             ],
         },
@@ -141,8 +141,8 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Level 30',
             links: [
                 {
-                    label: 'Website',
-                    href: 'http://radiantsouls.orcon.net.nz/',
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20050407131840/http://radiantsouls.orcon.net.nz:80/',
                 },
             ],
         },
@@ -156,8 +156,8 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Series of tests',
             links: [
                 {
-                    label: 'Website',
-                    href: 'http://www.kyia.com/fate/',
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20040712040914/http://www.kyia.com:80/fate/',
                 },
             ],
             quote: {
@@ -196,7 +196,7 @@ Sometimes keeping track of all these clans make some people wonder how it is pos
             requirements: 'Level 40 (Invitation Only)',
             links: [
                 {
-                    label: 'Website',
+                    label: 'Website (dead link)',
                     href: 'http://www.agsir.tk/',
                 },
             ],
