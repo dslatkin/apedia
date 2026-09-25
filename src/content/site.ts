@@ -106,7 +106,8 @@ export const site: Site = {
         {
             label: 'Community',
             items: [
-                { label: 'Forums', href: 'http://forums.akarra.com/' },
+                { label: 'Akarra.com', href: 'https://akarra.com/' },
+                { label: 'Shards', href: '/community/shards' },
                 { label: 'Fansites', href: '/community/fansites' },
                 { label: 'Guilds & Clans', href: '/community/clans' },
             ],

@@ -1,5 +1,6 @@
 export { clanDirectory } from './community/clans';
 export { fansites } from './community/fansites';
+export { shardsPage } from './community/shards';
 export { contactPage, thanksPage } from './contact';
 export { accessories } from './equipment/accessories';
 export { armor } from './equipment/armor';
