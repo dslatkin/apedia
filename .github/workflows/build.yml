@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - next # temporary for development
 
 concurrency:
   group: pages
