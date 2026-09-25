@@ -8,6 +8,8 @@ export default defineConfig({
     // https://vite.dev/guide/troubleshooting#dev-containers-vs-code-port-forwarding
     server: {
         host: '127.0.0.1',
+        // Lets `npm run tunnel:up` share the dev server; quick tunnel addresses are random.
+        allowedHosts: ['.trycloudflare.com'],
     },
     plugins: [
         tailwindcss(),
@@ -27,6 +29,11 @@ export default defineConfig({
             alias: {
                 $types: 'src/types',
                 $content: 'src/content',
+            },
+            typescript: {
+                config: (config) => {
+                    config['include'].push('../tunnel.ts');
+                },
             },
         }),
     ],

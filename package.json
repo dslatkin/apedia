@@ -11,7 +11,10 @@
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "prettier --check . && eslint .",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "tunnel:up": "node tunnel.ts up",
+        "tunnel:down": "node tunnel.ts down",
+        "tunnel:status": "node tunnel.ts status"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
@@ -21,6 +24,7 @@
         "@tailwindcss/vite": "^4.3.3",
         "@types/hast": "^3.0.5",
         "@types/node": "^26",
+        "cloudflared": "^0.7.3",
         "eslint": "^10.4.1",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-svelte": "^3.19.0",

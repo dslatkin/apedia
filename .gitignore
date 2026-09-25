@@ -18,6 +18,9 @@ Thumbs.db
 !.env.example
 !.env.test
 
+# Cloudflare tunnel state (holds the tunnel's address)
+/.tunnel
+
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
