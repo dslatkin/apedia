@@ -29,11 +29,11 @@
             392
         </p>
         <div class="mt-6">
-            {#each data.posts as post (post.date)}
-                <NewsArticle {post} />
-            {/each}
+            <NewsArticle post={data.post} />
         </div>
-        <p class="mt-8"><a href={resolve('/news')}>Older news</a></p>
+        <p class="mt-8">
+            <a href={resolve('/news')}>Older news</a>
+        </p>
     </div>
 
     <aside

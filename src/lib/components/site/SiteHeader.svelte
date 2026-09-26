@@ -1,10 +1,10 @@
 <script lang="ts">
     import { asset, resolve } from '$app/paths';
     import { page } from '$app/state';
-    import type { NavMenu } from '$types';
+    import type { NavItem } from '$types';
     import SiteNav from './SiteNav.svelte';
 
-    let { title, menus }: { title: string; menus: NavMenu[] } = $props();
+    let { title, menus }: { title: string; menus: NavItem[] } = $props();
 </script>
 
 <header>

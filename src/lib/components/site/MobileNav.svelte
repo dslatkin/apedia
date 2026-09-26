@@ -1,10 +1,10 @@
 <script lang="ts">
     import { tw } from '$lib/tw';
-    import type { NavItem, NavMenu } from '$types';
+    import type { NavItem } from '$types';
     import { twMerge } from 'tailwind-merge';
     import SiteLink from '../SiteLink.svelte';
 
-    let { menus }: { menus: NavMenu[] } = $props();
+    let { menus }: { menus: NavItem[] } = $props();
 
     const summary = tw(
         'flex cursor-pointer list-none items-center gap-3 select-none [&::-webkit-details-marker]:hidden',
@@ -67,18 +67,27 @@
         <ul class="divide-y divide-black border-t border-black">
             {#each menus as menu (menu.label)}
                 <li>
-                    <details name="site-menu" class="group/menu">
-                        <summary class={twMerge(summary, menuSummary)}>
+                    {#if !('items' in menu)}
+                        <SiteLink
+                            href={menu.href}
+                            class={twMerge(link, 'px-4 py-3')}
+                        >
                             {menu.label}
-                            <span
-                                aria-hidden="true"
-                                class="group-open/menu:rotate-90"
-                            >
-                                &gt;
-                            </span>
-                        </summary>
-                        {@render entries(menu.items, 1)}
-                    </details>
+                        </SiteLink>
+                    {:else}
+                        <details name="site-menu" class="group/menu">
+                            <summary class={twMerge(summary, menuSummary)}>
+                                {menu.label}
+                                <span
+                                    aria-hidden="true"
+                                    class="group-open/menu:rotate-90"
+                                >
+                                    &gt;
+                                </span>
+                            </summary>
+                            {@render entries(menu.items, 1)}
+                        </details>
+                    {/if}
                 </li>
             {/each}
         </ul>

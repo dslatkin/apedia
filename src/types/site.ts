@@ -1,15 +1,8 @@
-import type {
-    ExternalUrl,
-    Href,
-    Image,
-    Markdown,
-    Picture,
-    SitePath,
-} from './common';
+import type { Href, Image, Markdown, Picture, SitePath } from './common';
 
 export interface Site {
     title: string;
-    menus: NavMenu[];
+    menus: NavItem[];
     home: HomePage;
     footer: Footer;
 }
@@ -32,11 +25,7 @@ export interface HomePage {
 }
 
 export interface Footer {
+    links: NavLink[];
     notice: Markdown;
-    banner?: FooterBanner;
-}
-
-export interface FooterBanner {
-    image: Image;
-    href: ExternalUrl;
+    banner?: Image;
 }

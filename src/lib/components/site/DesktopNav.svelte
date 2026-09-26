@@ -1,10 +1,10 @@
 <script lang="ts">
     import { tw } from '$lib/tw';
-    import type { NavItem, NavMenu } from '$types';
+    import type { NavItem } from '$types';
     import { twMerge } from 'tailwind-merge';
     import SiteLink from '../SiteLink.svelte';
 
-    let { menus }: { menus: NavMenu[] } = $props();
+    let { menus }: { menus: NavItem[] } = $props();
 
     const item = tw(
         'relative [anchor-scope:--menu] focus-within:bg-blue focus-within:text-white hover:bg-blue hover:text-white',
@@ -61,8 +61,17 @@
     <ul class="flex">
         {#each menus as menu (menu.label)}
             <li class={twMerge(item, 'flex-1')}>
-                <span class={topLabel}>{menu.label}</span>
-                {@render entries(menu.items, 1)}
+                {#if 'items' in menu}
+                    <span class={topLabel}>{menu.label}</span>
+                    {@render entries(menu.items, 1)}
+                {:else}
+                    <SiteLink
+                        href={menu.href}
+                        class={twMerge(topLabel, 'text-inherit no-underline')}
+                    >
+                        {menu.label}
+                    </SiteLink>
+                {/if}
             </li>
         {/each}
     </ul>

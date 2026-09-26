@@ -6,7 +6,7 @@
     let { data }: PageProps = $props();
 </script>
 
-<PageHeader title="News Archives" />
+<PageHeader title="News" />
 
 <ul
     class="grid gap-px border border-black bg-black text-sm sm:grid-cols-2 md:grid-cols-3"

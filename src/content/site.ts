@@ -16,6 +16,8 @@ function sections(route: SitePathname, categories: Category[]): NavLink[] {
     }));
 }
 
+const GITHUB_URL = 'https://github.com/dslatkin/apedia';
+
 function randomWeapon(file: string, name: string): Picture {
     return {
         name,
@@ -27,11 +29,13 @@ function randomWeapon(file: string, name: string): Picture {
 export const site: Site = {
     title: 'Akarrian Encyclopedia',
     menus: [
+        { label: 'News', href: '/news' },
         {
-            label: 'News',
+            label: 'Community',
             items: [
-                { label: 'Current News', href: '/' },
-                { label: 'News Archives', href: '/news' },
+                { label: 'Shards', href: '/community/shards' },
+                { label: 'Websites', href: '/community/websites' },
+                { label: 'Guilds & Clans', href: '/community/clans' },
             ],
         },
         {
@@ -104,18 +108,12 @@ export const site: Site = {
             ],
         },
         {
-            label: 'Community',
+            label: 'About',
             items: [
-                { label: 'Shards', href: '/community/shards' },
-                { label: 'Websites', href: '/community/websites' },
-                { label: 'Guilds & Clans', href: '/community/clans' },
-            ],
-        },
-        {
-            label: 'Contact',
-            items: [
-                { label: 'Contact Me', href: '/contact' },
+                { label: 'History', href: '/history' },
                 { label: 'Special Thanks', href: '/thanks' },
+                { label: 'Contact Me', href: '/contact' },
+                { label: 'Source Code', href: GITHUB_URL },
             ],
         },
     ],
@@ -134,13 +132,15 @@ export const site: Site = {
         ],
     },
     footer: {
+        links: [
+            { label: 'Contact Me', href: '/contact' },
+            { label: 'Special Thanks', href: '/thanks' },
+            { label: 'Source Code', href: GITHUB_URL },
+        ],
         banner: {
-            image: {
-                src: '/images/akarrabanner.gif',
-                alt: 'Whispers In Akarra',
-            },
-            href: 'http://www.akarra.com/',
+            src: '/images/akarrabanner.gif',
+            alt: 'Whispers In Akarra',
         },
-        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin 2002-03 unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten and the Whispers In Akarra Development Team. Please see the [Special Thanks](/thanks) page for more information.',
+        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten. Please see the [Special Thanks](/thanks) page for more information.',
     },
 };

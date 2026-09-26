@@ -1,3 +1,4 @@
+export { historyPage } from './about/history';
 export { clanDirectory } from './community/clans';
 export { websiteDirectory } from './community/websites';
 export { shardsPage } from './community/shards';

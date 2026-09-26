@@ -1,15 +1,15 @@
 import { newsPosts } from '$content/news';
 import { site } from '$content/site';
 import { renderMarkdown } from '$lib/server/markdown';
+import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
-const LATEST_POSTS = 5;
-
-export const load: PageServerLoad = () => ({
-    title: 'Current News',
-    posts: newsPosts.slice(0, LATEST_POSTS).map((post) => ({
-        date: post.date,
-        html: renderMarkdown(post.body).html,
-    })),
-    randomWeapons: site.home.randomWeapons,
-});
+export const load: PageServerLoad = () => {
+    const [latest] = newsPosts;
+    if (!latest) error(500, 'There are no news posts');
+    return {
+        title: 'Latest News',
+        post: { date: latest.date, html: renderMarkdown(latest.body).html },
+        randomWeapons: site.home.randomWeapons,
+    };
+};

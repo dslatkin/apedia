@@ -1,9 +1,9 @@
 <script lang="ts">
-    import type { NavMenu } from '$types';
+    import type { NavItem } from '$types';
     import DesktopNav from './DesktopNav.svelte';
     import MobileNav from './MobileNav.svelte';
 
-    let { menus }: { menus: NavMenu[] } = $props();
+    let { menus }: { menus: NavItem[] } = $props();
 </script>
 
 <MobileNav {menus} />
