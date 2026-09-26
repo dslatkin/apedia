@@ -25,7 +25,7 @@ export const websiteDirectory: WebsiteDirectory = {
     inactive: [
         {
             name: 'Whispers In Akarra (archived)',
-            url: 'https://web.archive.org/web/20030806043247/http://www.akarra.com:80/',
+            url: 'https://web.archive.org/web/20040325013734/http://akarra.net/',
             description: "The game's own website while it was running.",
         },
         {
