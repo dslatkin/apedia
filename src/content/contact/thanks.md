@@ -28,7 +28,7 @@ _All Whispers In Akarra images and game related content have been used with perm
 
 **Extra thanks goes to:**
 
-- Luke O'Connel for the great hosting!
+- Luke O'Connel for providing hosting for the Apedia in its early days.
 - TwinHelix Designs for the nice cascade menu's javascript. Visit [www.twinhelix.com](http://www.twinhelix.com) to learn more.
 - GoStats.com for the counter. Visit [www.gostats.com](http://www.gostats.com) to get a GoStats counter.
 
