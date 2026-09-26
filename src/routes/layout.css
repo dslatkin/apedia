@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-gray-dark: #999999;
+    --color-gray-light: #cccccc;
+    --color-green-light: #cbffcb;
+    --color-green-dark: #339966;
+    --color-teal: #99cccc;
+    --color-purple: #ccccdd;
+    --color-blue: #6699cc;
+    --color-orange: #cc6600;
+    --color-red: #ff0000;
+
+    --font-sans: Verdana, Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+    /*
+     * 14px by default, as a percentage so a reader's own browser setting still scales it.
+     * Tailwind's text sizes and spacing are in rem, so they scale with it.
+     */
+    html {
+        font-size: 87.5%;
+    }
+
+    body {
+        @apply bg-gray-dark text-black;
+    }
+
+    a {
+        @apply text-orange underline;
+    }
+
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-blue;
+    }
+}

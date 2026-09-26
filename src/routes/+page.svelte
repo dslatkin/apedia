@@ -1,39 +1,51 @@
 <script lang="ts">
-    import { browser } from '$app/environment';
+    import { resolve } from '$app/paths';
+    import NewsArticle from '$lib/components/news/NewsArticle.svelte';
+    import PageHeader from '$lib/components/PageHeader.svelte';
+    import PictureLink from '$lib/components/PictureLink.svelte';
+    import type { Picture } from '$types';
+    import { onMount } from 'svelte';
+    import type { PageProps } from './$types';
 
-    type Weapon = {
-        filename: string;
-        alt: string;
-    };
+    let { data }: PageProps = $props();
 
-    let weapons: Weapon[] | undefined = undefined;
-    if (browser) {
-        weapons = [
-            { filename: 'berdiche.jpg', alt: 'berdiche' },
-            { filename: 'claymore.jpg', alt: 'claymore' },
-            { filename: 'falchion.gif', alt: 'falchion' },
-            { filename: 'flamberge.jpg', alt: 'flamberge' },
-            { filename: 'gladius.jpg', alt: 'gladius' },
-            { filename: 'khyber.jpg', alt: 'khyber' },
-            { filename: 'rapier.jpg', alt: 'rapier' },
-            { filename: 'rapierparts.jpg', alt: 'rapierparts' },
-            { filename: 'stiletto.jpg', alt: 'stiletto' },
-            { filename: 'tegha.jpg', alt: 'tegha' },
-        ];
-    }
-
-    let weapon: Weapon | undefined = undefined;
-    if (browser && weapons) {
-        const idx = Math.floor(Math.random() * weapons.length);
-        weapon = weapons[idx];
-    }
+    let weapon = $state<Picture>();
+    onMount(() => {
+        const { randomWeapons } = data;
+        weapon =
+            randomWeapons[Math.floor(Math.random() * randomWeapons.length)];
+    });
 </script>
 
-{#if weapon}
-    <a href="images/pics/large/{weapon.filename}" target="_blank">
-        <img
-            src="images/pics/thumbnail/{weapon.filename}"
-            alt="A {weapon.alt}"
-        />
-    </a>
-{/if}
+<div
+    class="-mx-(--gutter-x) -my-(--gutter-y) @5xl/page:grid @5xl/page:grid-cols-3"
+>
+    <div
+        class="px-(--gutter-x) py-(--gutter-y) @5xl/page:col-span-2 @5xl/page:max-lg:px-4"
+    >
+        <PageHeader title={data.title} />
+        <p>
+            <strong>Current known items in the database:</strong>
+            392
+        </p>
+        <div class="mt-6">
+            <NewsArticle post={data.post} />
+        </div>
+        <p class="mt-8">
+            <a href={resolve('/news')}>Older news</a>
+        </p>
+    </div>
+
+    <aside
+        aria-labelledby="random-weapon"
+        class="flex flex-col items-center gap-4 border-t border-black bg-green-light px-4 py-6 text-center @5xl/page:border-t-0 @5xl/page:border-l @5xl/page:max-lg:px-2"
+    >
+        <h2 id="random-weapon" class="text-xl font-bold uppercase">
+            Random Weapon
+        </h2>
+        {#if weapon}
+            <PictureLink picture={weapon} class="[zoom:1.25]" />
+            <p class="font-bold">(Click the picture for an enlargement)</p>
+        {/if}
+    </aside>
+</div>

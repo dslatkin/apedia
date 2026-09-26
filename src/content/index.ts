@@ -1,0 +1,15 @@
+export { historyPage } from './about/history';
+export { clanDirectory } from './community/clans';
+export { websiteDirectory } from './community/websites';
+export { shardsPage } from './community/shards';
+export { contactPage, thanksPage } from './contact';
+export { accessories } from './equipment/accessories';
+export { armor } from './equipment/armor';
+export { items } from './equipment/items';
+export { scrolls } from './equipment/scrolls';
+export { weapons } from './equipment/weapons';
+export * from './equipment/categories';
+export * from './guides';
+export { newsPosts } from './news';
+export * from './screenshots';
+export { site } from './site';

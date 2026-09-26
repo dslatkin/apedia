@@ -1,0 +1,263 @@
+import type { ClanDirectory } from '$types';
+
+export const clanDirectory: ClanDirectory = {
+    intro: `Clans have developed and changed since the first day of the first clan of the first group of individuals. Each clan strides to be their best in their own way. Many have different goals, are Allied others, and are even major enemies of eachother.
+
+Sometimes keeping track of all these clans make some people wonder how it is possible to keep up-to-date with all the changes. Back in the simple days of pA_12, there were only three clans. Today though, there are more than twice of that. Thus, we need a good way to keep the different clans organized.`,
+    diplomacyUpdated: '2003-09-05',
+    clans: [
+        {
+            id: 'true-ravagers',
+            name: 'True Ravagers',
+            tag: 'TR',
+            creators: [
+                'Aardwolf',
+                'Foldorn',
+                'Rechendak',
+                'Ruisleipa',
+                'Yeknodd',
+            ],
+            allied: ['brotherhood-of-loyalty'],
+            hostile: [],
+            requirements: 'To roleplay, Series of tests (currently closed)',
+        },
+        {
+            id: 'chosen-heroes',
+            name: 'Chosen Heroes',
+            tag: 'Sexy',
+            creators: ['Mac', 'Nelly', 'Pluto', 'Taz', 'Trance'],
+            allied: ['purple-haze'],
+            hostile: ['shaolin-monks'],
+            requirements: 'Level 45',
+            links: [
+                {
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20040102030038/http://chosenheroes.us:80/',
+                },
+                {
+                    label: 'Forums (dead link)',
+                    href: 'http://www.chosenheroes.us/forums/',
+                },
+            ],
+            quote: {
+                text: "CH, Sexy, all that... It's only a tag to show our pride in being a clan. However, there is no clan without the clan members. No matter if this one name survives or falls, the members are the clan, not the tag.",
+                attribution: 'NightVixen',
+            },
+        },
+        {
+            id: 'lords-of-chaos',
+            name: 'Lords of Chaos',
+            tag: 'LORD',
+            creators: ['Aragon', 'Gazeibo', 'Luthor', 'Scotty', 'TetsumotoBR'],
+            allied: [
+                'lords-in-training',
+                'knights-of-the-imperial-dragon',
+                'brasilian-kingdom',
+                'purple-haze',
+            ],
+            hostile: [],
+            requirements: 'Level 60',
+            links: [
+                {
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20030808232926/http://www.freewebs.com:80/akarralord/',
+                },
+            ],
+            quote: {
+                text: 'RULES... Coming Soon!',
+                attribution: 'Clan Site',
+            },
+        },
+        {
+            id: 'purple-haze',
+            name: 'Purple Haze',
+            tag: 'PHZ',
+            creators: ['Kilala', 'Kevdude', 'Mikehappy', 'Origon', 'Xofia'],
+            allied: ['chosen-heroes', 'turns-of-fate', 'lords-of-chaos'],
+            hostile: ['shaolin-monks'],
+            requirements: 'Level 20, Activeness',
+            links: [
+                {
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20030805230558/http://www.phz.aractelnetworks.net:80/home/index.php',
+                },
+            ],
+            quote: {
+                text: 'Umm... Copyleft ©2003 Purple Haze. All rights probably reserved.',
+                attribution: 'Clan Site',
+            },
+        },
+        {
+            id: 'knights-of-the-imperial-dragon',
+            name: 'Knights of the Imperial Dragon',
+            tag: 'KoID',
+            creators: [
+                'AntoineBLS',
+                'Bluehyren',
+                'Deathboy',
+                'RakeeM',
+                'Silver',
+            ],
+            allied: [
+                'purple-haze',
+                'radiant-souls',
+                'lords-of-chaos',
+                'brasilian-kingdom',
+                'lords-in-training',
+            ],
+            hostile: [],
+            requirements: 'Level 50',
+            links: [
+                {
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20030808205214/http://www.nolife.nu:80/koid.php',
+                },
+            ],
+        },
+        {
+            id: 'shaolin-monks',
+            name: 'Shaolin Monks',
+            tag: 'Monk',
+            creators: ['Dragongod', 'Gerbo', 'Gon', 'PsydonDeigest', 'xTCCx'],
+            allied: [],
+            hostile: [],
+        },
+        {
+            id: 'brotherhood-of-loyalty',
+            name: 'Brotherhood of Loyalty',
+            tag: 'Hood',
+            creators: ['Eirk', 'Mac', 'Origon', 'Ranskanleipa', 'Ruisleipa'],
+            allied: ['true-ravagers', 'turns-of-fate'],
+            hostile: ['shaolin-monks'],
+            requirements: 'To roleplay',
+        },
+        {
+            id: 'radiant-souls',
+            name: 'Radiant Souls',
+            tag: 'True',
+            creators: ['Artemis', 'Azrael', 'Dante', 'Luthor', 'Novan'],
+            allied: ['great-armies-of-middle-earth', 'turns-of-fate'],
+            hostile: [],
+            requirements: 'Level 30',
+            links: [
+                {
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20050407131840/http://radiantsouls.orcon.net.nz:80/',
+                },
+            ],
+        },
+        {
+            id: 'turns-of-fate',
+            name: 'Turns of Fate',
+            tag: 'Fate',
+            creators: ['Fudoshin', 'Jak', 'Malystry', 'Stant', 'Tayron'],
+            allied: ['purple-haze', 'brotherhood-of-loyalty', 'radiant-souls'],
+            hostile: [],
+            requirements: 'Series of tests',
+            links: [
+                {
+                    label: 'Website (archived)',
+                    href: 'https://web.archive.org/web/20040712040914/http://www.kyia.com:80/fate/',
+                },
+            ],
+            quote: {
+                text: 'From the dawn of time, Fate has guided life. Those who create their Fate create their destiny.',
+                attribution: 'Stant',
+            },
+        },
+        {
+            id: 'great-armies-of-middle-earth',
+            name: 'Great Armies of Middle Earth',
+            tag: 'LOTR',
+            creators: [
+                'Aragorn',
+                'Bluehyren',
+                'Ellesar',
+                'Telcontar',
+                'Tjockoman',
+            ],
+            allied: ['radiant-souls', 'almighty-guardians'],
+            hostile: [],
+            requirements: 'Level 35, Knowledge of the LOTR series',
+        },
+        {
+            id: 'almighty-guardians',
+            name: 'Almighty Guardians',
+            tag: 'Sir.',
+            creators: [
+                'Ashante',
+                'Bluehyren',
+                'MysticCartonist',
+                'RakeeM',
+                'Tehn',
+            ],
+            allied: ['great-armies-of-middle-earth'],
+            hostile: [],
+            requirements: 'Level 40 (Invitation Only)',
+            links: [
+                {
+                    label: 'Website (dead link)',
+                    href: 'http://www.agsir.tk/',
+                },
+            ],
+        },
+        {
+            id: 'lords-in-training',
+            name: 'Lords in Training',
+            tag: 'LiT',
+            creators: [
+                'Bluespider',
+                'Mormegil',
+                'Scotty',
+                'Spellmage',
+                'TetsumotoBR',
+            ],
+            allied: ['lords-of-chaos', 'knights-of-the-imperial-dragon'],
+            hostile: [],
+            requirements: 'Level 50, at least a week in LiT',
+        },
+        {
+            id: 'brasilian-kingdom',
+            name: 'Brasilian Kingdom',
+            tag: 'KING',
+            creators: [
+                'AquaritsBR',
+                'SamBR',
+                'Scotty',
+                'Spellmage',
+                'TestumotoBR',
+            ],
+            allied: ['lords-of-chaos', 'knights-of-the-imperial-dragon'],
+            hostile: [],
+        },
+        {
+            id: 'forilla',
+            name: 'Forilla',
+            tag: 'REAL',
+            creators: [
+                'AngryBlue',
+                'Eliadric',
+                'Gorilla',
+                'Mikehappy',
+                'Prozak',
+            ],
+            allied: [],
+            hostile: [],
+        },
+        {
+            id: 'immortals',
+            name: 'Immortals',
+            tag: 'Sage',
+            creators: [
+                'Eliadric',
+                'Flash',
+                'Gorilla',
+                'MikeHappy',
+                'Sinsister',
+            ],
+            allied: [],
+            hostile: [],
+            requirements: 'Level 90',
+        },
+    ],
+};
