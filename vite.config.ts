@@ -3,6 +3,21 @@ import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
+function getBasePath() {
+    if (process.argv.includes('dev')) {
+        return '';
+    }
+
+    const path = process.env['BASE_PATH'] ?? '';
+    if (path && !path.startsWith('/')) {
+        throw new Error(
+            `❌ BASE_PATH must start with "/", got "${path}" instead`,
+        );
+    }
+
+    return path as '' | `/${string}`;
+}
+
 export default defineConfig({
     // Fix dev container dev server
     // https://vite.dev/guide/troubleshooting#dev-containers-vs-code-port-forwarding
@@ -34,6 +49,9 @@ export default defineConfig({
                 config: (config) => {
                     config['include'].push('../tunnel.ts');
                 },
+            },
+            paths: {
+                base: getBasePath(),
             },
         }),
     ],
