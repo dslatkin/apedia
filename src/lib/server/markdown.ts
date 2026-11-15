@@ -1,3 +1,5 @@
+import { asset, resolve } from '$app/paths';
+import type { Asset } from '$app/types';
 import { slugify, type Heading } from '$lib/markdown';
 import type { Markdown } from '$types';
 import type { Element, Root } from 'hast';
@@ -43,6 +45,29 @@ function rehypeHeadingIds() {
     };
 }
 
+function isRootPath(value: unknown): value is `/${string}` {
+    return typeof value === 'string' && /^\/(?!\/)/.test(value);
+}
+
+// resolve() is typed per route and cannot take any-route hrefs.
+const resolvePath = resolve as (path: string) => string;
+
+// Markdown links and images are written root-relative (`/history/game`) so files can move
+// freely; this adds the base path the site is deployed under.
+function rehypeBasePath() {
+    return (tree: Root) => {
+        visit(tree, 'element', (node: Element) => {
+            const { href, src } = node.properties;
+            if (isRootPath(href)) {
+                node.properties.href = resolvePath(href);
+            }
+            if (isRootPath(src)) {
+                node.properties.src = asset(src as Asset);
+            }
+        });
+    };
+}
+
 export interface RenderedMarkdown {
     html: string;
     headings: Heading[];
@@ -52,6 +77,7 @@ const processor = unified()
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeHeadingIds)
+    .use(rehypeBasePath)
     .use(rehypeStringify);
 
 export function renderMarkdown(markdown: Markdown): RenderedMarkdown {
