@@ -1,18 +1,18 @@
 import type { MarkdownPage } from '$types';
 import { runningServers } from '../community/play';
-import shards from './shards.md?raw';
-import theOriginal from './the-original.md?raw';
+import communityShards from './community-shards.md?raw';
+import theOriginalGame from './the-original-game.md?raw';
 
 /** The parts of the history, in reading order. Each is served at `/history/<slug>`. */
 export const historyParts: MarkdownPage[] = [
     {
-        slug: 'the-original',
-        title: 'The Original',
-        body: theOriginal,
+        slug: 'the-original-game',
+        title: 'The Original Game',
+        body: theOriginalGame,
     },
     {
-        slug: 'shards',
-        title: 'Shards',
-        body: shards.replace('<!-- servers -->', runningServers),
+        slug: 'community-shards',
+        title: 'Community Shards',
+        body: communityShards.replace('<!-- servers -->', runningServers),
     },
 ];

@@ -120,14 +120,14 @@ export const site: Site = {
         {
             label: 'About',
             items: [
-                { label: 'Special Thanks', href: '/thanks' },
                 { label: 'Contact Me', href: '/contact' },
                 { label: 'Source Code', href: GITHUB_URL },
+                { label: 'Special Thanks', href: '/thanks' },
             ],
         },
     ],
     home: {
-        intro: 'The Akarrian Encyclopedia is a reference website for Whispers in Akarra and a testament to the game, still maintained today by Talonz, who took it over from Trance in 2003. Whispers in Akarra was a small, free, online role-playing game that ran from 2002 to 2004. For more about the game and its modern incarnations, read about the [history of the original](/history/the-original) and the [history of its shards](/history/shards).\n\nYou can still [play the game today](/community/play) on player-run shards. If you would like anything on this website updated, please [get in touch with me](/contact).',
+        intro: 'The Akarrian Encyclopedia is a reference website for Whispers in Akarra and a testament to the game, still maintained today by Talonz, who took it over from Trance in 2003. Whispers in Akarra was a small, free, online role-playing game that ran from 2002 to 2004. For more about the game and its modern incarnations, read about the [history of the original game](/history/the-original-game) and the [history of its community shards](/history/community-shards).\n\nYou can still [play the game today](/community/play) on player-run shards. If you would like anything on this website updated, please [get in touch with me](/contact).',
         randomWeapons: [
             randomWeapon('berdiche.jpg', 'Berdiche'),
             randomWeapon('claymore.jpg', 'Claymore'),
@@ -144,13 +144,13 @@ export const site: Site = {
     footer: {
         links: [
             { label: 'Contact Me', href: '/contact' },
-            { label: 'Special Thanks', href: '/thanks' },
             { label: 'Source Code', href: GITHUB_URL },
+            { label: 'Special Thanks', href: '/thanks' },
         ],
         banner: {
             src: '/images/akarrabanner.gif',
             alt: 'Whispers In Akarra',
         },
-        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten. Please see the [Special Thanks](/thanks) page for more information.',
+        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten.',
     },
 };
