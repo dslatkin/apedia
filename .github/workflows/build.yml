@@ -12,6 +12,9 @@ concurrency:
 
 jobs:
   build:
+    permissions:
+      contents: read # to check out the repository
+      pages: read # to look up the site's base path
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,11 +31,15 @@ jobs:
       - name: Install build deps
         run: npm clean-install
 
+      - name: Get pages info
+        id: pages
+        uses: actions/configure-pages@v6
+
       - name: Build project
         id: build
         run: npm run build
         env:
-          BASE_PATH: /${{ github.repository }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload pages artifact
         id: deployment
