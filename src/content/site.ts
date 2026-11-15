@@ -151,6 +151,6 @@ export const site: Site = {
             src: '/images/akarrabanner.gif',
             alt: 'Whispers In Akarra',
         },
-        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin unless otherwise noted. Whispers In Akarra (including game images, banners, etc.) are copyright Jens "Khaile" Bergensten.',
+        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin.\n\nWhispers In Akarra are copyright Jens "Khaile" Bergensten.',
     },
 };
