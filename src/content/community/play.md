@@ -2,4 +2,4 @@ Whispers in Akarra closed in 2004, but you can still play it. Players have run t
 
 <!-- servers -->
 
-How these servers came to be is told on the [Community Shards](/history/community-shards) history page.
+How these servers came to be, and the shards that came before them, is told on the [Community Shards](/history/community-shards) history page.

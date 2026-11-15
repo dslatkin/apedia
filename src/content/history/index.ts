@@ -1,5 +1,4 @@
 import type { MarkdownPage } from '$types';
-import { runningServers } from '../community/play';
 import communityShards from './community-shards.md?raw';
 import theOriginalGame from './the-original-game.md?raw';
 
@@ -13,6 +12,6 @@ export const historyParts: MarkdownPage[] = [
     {
         slug: 'community-shards',
         title: 'Community Shards',
-        body: communityShards.replace('<!-- servers -->', runningServers),
+        body: communityShards,
     },
 ];
