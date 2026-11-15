@@ -23,11 +23,8 @@
     <div
         class="px-(--gutter-x) py-(--gutter-y) @5xl/page:col-span-2 @5xl/page:max-lg:px-4"
     >
-        <PageHeader title={data.title} />
-        <p>
-            <strong>Current known items in the database:</strong>
-            392
-        </p>
+        <PageHeader title={data.title} introHtml={data.introHtml} />
+        <h2 class="text-xl font-bold uppercase">Latest News</h2>
         <div class="mt-6">
             <NewsArticle post={data.post} />
         </div>

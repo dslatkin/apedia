@@ -8,6 +8,7 @@ import {
 } from './equipment/categories';
 import { commandReference } from './guides/commands';
 import { monsterLevelBands } from './guides/monster-levels';
+import { historyParts } from './history';
 
 function sections(route: SitePathname, categories: Category[]): NavLink[] {
     return categories.map(({ id, label }) => ({
@@ -33,16 +34,25 @@ export const site: Site = {
         {
             label: 'Community',
             items: [
-                { label: 'Shards', href: '/community/shards' },
+                { label: 'Play Today', href: '/community/play' },
                 { label: 'Websites', href: '/community/websites' },
                 { label: 'Guilds & Clans', href: '/community/clans' },
             ],
         },
         {
-            label: 'Screenshots',
+            label: 'History',
             items: [
-                { label: 'PreAlpha 13', href: '/screenshots/pa13' },
-                { label: 'Alpha 1', href: '/screenshots/a1' },
+                ...historyParts.map(({ slug, title }) => ({
+                    label: title,
+                    href: `/history/${slug}` as const,
+                })),
+                {
+                    label: 'Screenshots',
+                    items: [
+                        { label: 'PreAlpha 13', href: '/screenshots/pa13' },
+                        { label: 'Alpha 1', href: '/screenshots/a1' },
+                    ],
+                },
             ],
         },
         {
@@ -110,7 +120,6 @@ export const site: Site = {
         {
             label: 'About',
             items: [
-                { label: 'History', href: '/history' },
                 { label: 'Special Thanks', href: '/thanks' },
                 { label: 'Contact Me', href: '/contact' },
                 { label: 'Source Code', href: GITHUB_URL },
@@ -118,6 +127,7 @@ export const site: Site = {
         },
     ],
     home: {
+        intro: 'The Akarrian Encyclopedia is a reference website for Whispers in Akarra and a testament to the game, still maintained today by Talonz, who took it over from Trance in 2003. Whispers in Akarra was a small, free, online role-playing game that ran from 2002 to 2004. For more about the game and its modern incarnations, read about the [history of the original](/history/the-original) and the [history of its shards](/history/shards).\n\nYou can still [play the game today](/community/play) on player-run shards. If you would like anything on this website updated, please [get in touch with me](/contact).',
         randomWeapons: [
             randomWeapon('berdiche.jpg', 'Berdiche'),
             randomWeapon('claymore.jpg', 'Claymore'),

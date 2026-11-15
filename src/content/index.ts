@@ -1,7 +1,7 @@
-export { historyPage } from './about/history';
+export { historyParts } from './history';
 export { clanDirectory } from './community/clans';
 export { websiteDirectory } from './community/websites';
-export { shardsPage } from './community/shards';
+export { playPage } from './community/play';
 export { contactPage, thanksPage } from './contact';
 export { accessories } from './equipment/accessories';
 export { armor } from './equipment/armor';

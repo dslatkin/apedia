@@ -1,7 +1,7 @@
 import type { WebsiteDirectory } from '$types';
 
 export const websiteDirectory: WebsiteDirectory = {
-    intro: 'Many of the shards still running have websites of their own. See the [Shards](/community/shards) page for those.',
+    intro: 'Many of the shards still running have websites of their own. See the [Play Today](/community/play) page for those.',
     active: [
         {
             name: 'Akarra.com',

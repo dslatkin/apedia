@@ -21,6 +21,7 @@ export interface NavLink {
 }
 
 export interface HomePage {
+    intro: Markdown;
     randomWeapons: Picture[];
 }
 

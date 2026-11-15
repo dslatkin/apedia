@@ -52,7 +52,7 @@ function isRootPath(value: unknown): value is `/${string}` {
 // resolve() is typed per route and cannot take any-route hrefs.
 const resolvePath = resolve as (path: string) => string;
 
-// Markdown links and images are written root-relative (`/history/game`) so files can move
+// Markdown links and images are written root-relative (`/history/shards`) so files can move
 // freely; this adds the base path the site is deployed under.
 function rehypeBasePath() {
     return (tree: Root) => {
