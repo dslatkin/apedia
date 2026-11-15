@@ -16,11 +16,12 @@
         {#if gallery.introHtml}
             <Prose html={gallery.introHtml} class="mb-4" />
         {/if}
-        <ul
-            class="grid gap-px border border-black bg-black sm:grid-cols-2 lg:grid-cols-3"
-        >
+        <!-- Cells overlap by 1px so neighboring borders form a single line; empty grid slots stay transparent. -->
+        <ul class="grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-3">
             {#each gallery.screenshots as screenshot (screenshot.full)}
-                <li class="bg-teal"><ScreenshotFigure {screenshot} /></li>
+                <li class="-mt-px -ml-px border border-black bg-teal">
+                    <ScreenshotFigure {screenshot} />
+                </li>
             {/each}
         </ul>
     {/snippet}
