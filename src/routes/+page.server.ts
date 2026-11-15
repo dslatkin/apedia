@@ -8,7 +8,7 @@ export const load: PageServerLoad = () => {
     const [latest] = newsPosts;
     if (!latest) error(500, 'There are no news posts');
     return {
-        title: 'Welcome to the Apedia!',
+        title: 'Welcome!',
         introHtml: renderMarkdown(site.home.intro).html,
         post: { date: latest.date, html: renderMarkdown(latest.body).html },
         randomWeapons: site.home.randomWeapons,

@@ -127,7 +127,7 @@ export const site: Site = {
         },
     ],
     home: {
-        intro: 'The Akarrian Encyclopedia is a reference website for Whispers in Akarra and a testament to the game, still maintained today by Talonz, who took it over from Trance in 2003. Whispers in Akarra was a small, free, online role-playing game that ran from 2002 to 2004. For more about the game and its modern incarnations, read about the [history of the original game](/history/the-original-game) and the [history of its community shards](/history/community-shards).\n\nYou can still [play the game today](/community/play) on player-run shards. If you would like anything on this website updated, please [get in touch with me](/contact).',
+        intro: 'The Akarrian Encyclopedia is a reference website for and a testament to _Whispers in Akarra_, a small, free, online role-playing game that originally ran from 2002 to 2004. The Encyclopedia is still maintained by Talonz, who took it over from Trance in 2003. Akarra itself was created by Jens Bergensten, who is now the lead developer and creative director of Minecraft.\n\nIf you would like to learn more about the game, check out [its history](/history/the-original-game) and [that of its shards](/history/community-shards). Or jump into one yourself and [start playing today](/community/play).',
         randomWeapons: [
             randomWeapon('berdiche.jpg', 'Berdiche'),
             randomWeapon('claymore.jpg', 'Claymore'),
