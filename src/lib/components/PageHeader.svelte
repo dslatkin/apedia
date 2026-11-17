@@ -21,6 +21,12 @@
 </svelte:head>
 
 <header class="mb-6 md:mb-8">
+    {#if page.data.archiveNoticeHtml}
+        <Prose
+            html={page.data.archiveNoticeHtml}
+            class="mb-6 border border-black bg-green-light px-4 py-3 text-sm"
+        />
+    {/if}
     <h1 class="text-2xl font-bold md:text-3xl">{title}</h1>
     {#if author}
         <p class="mt-1 text-sm italic">Written by {author}</p>

@@ -5,6 +5,8 @@ export interface Site {
     menus: NavItem[];
     home: HomePage;
     footer: Footer;
+    /** Shown at the top of the Guides and Equipment pages. */
+    archiveNotice: Markdown;
 }
 
 export interface NavMenu {
