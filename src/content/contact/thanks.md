@@ -24,12 +24,10 @@ Aardwolf, phoenixlord, Ormoc, Taz, Geranik, Harpo, Sorcerer, Renmazuo, Mac, Nigh
 
 A tremendous thanks goes out to the above people. Without them, this site would not be possible.
 
-_All Whispers in Akarra images and game related content have been used with permission and are copyright Jens "Khaile" Bergensten, Jason "Trance" Rochon, and the WiA Dev Team._
-
 **Extra thanks goes to:**
 
-- Luke O'Connel for providing hosting for the Apedia in its early days.
-- TwinHelix Designs for the nice cascade menu's javascript. Visit [www.twinhelix.com](http://www.twinhelix.com) to learn more.
-- GoStats.com for the counter. Visit [www.gostats.com](http://www.gostats.com) to get a GoStats counter.
+- Luke O'Connel for providing hosting for the Apedia during a period in its early days.
+- [TwinHelix Designs](http://www.twinhelix.com) for original navigation menu's javascript.
+- [GoStats.com](www.gostats.com) for the original hit counter.
 
-If I am missing anyone then please let me know!
+If I am missing anyone, please [let me know](/contact)!
