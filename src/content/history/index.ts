@@ -1,4 +1,5 @@
 import type { MarkdownPage } from '$types';
+import { shards, withShardList } from '../community/shards';
 import communityShards from './community-shards.md?raw';
 import theOriginalGame from './the-original-game.md?raw';
 
@@ -12,6 +13,6 @@ export const historyParts: MarkdownPage[] = [
     {
         slug: 'community-shards',
         title: 'Community Shards',
-        body: communityShards,
+        body: withShardList(communityShards, shards),
     },
 ];

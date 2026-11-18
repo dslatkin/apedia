@@ -34,3 +34,12 @@ export interface Quote {
     text: string;
     attribution: string;
 }
+
+export interface Shard {
+    name: string;
+    /** As shown in lists, e.g. "2005–2006" or "2018 to today". */
+    years: string;
+    description: string;
+    /** Set while the shard can still be played. */
+    running?: { url: ExternalUrl; discord: ExternalUrl };
+}
