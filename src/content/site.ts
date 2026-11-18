@@ -127,7 +127,7 @@ export const site: Site = {
         },
     ],
     home: {
-        intro: 'The Akarrian Encyclopedia is a reference website for and a testament to the original _Whispers in Akarra_, which was a small, free, online role-playing game that originally ran from 2002 to 2004. The Encyclopedia is still maintained by Talonz, who took it over from Trance in 2003. Akarra itself was created by Jens Bergensten, who is now the lead developer and creative director of Minecraft.\n\nMore information about the game can be found under "History" in the site navigation, or you can jump into a shard and [start playing today](/community/play).',
+        intro: 'The Akarrian Encyclopedia is a reference website for and a testament to the original _Whispers in Akarra_, which was a small, free, online role-playing game that originally ran from 2002 to 2004. The Encyclopedia is still maintained by Talonz, who took it over from Trance in 2003. Akarra itself was created by Jens Bergensten, best known as the lead developer and designer of Minecraft.\n\nMore information about the game can be found under "History" in the site navigation, or you can jump into a shard and [start playing today](/community/play).',
         randomWeapons: [
             randomWeapon('berdiche.jpg', 'Berdiche'),
             randomWeapon('claymore.jpg', 'Claymore'),
