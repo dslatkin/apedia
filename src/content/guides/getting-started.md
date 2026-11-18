@@ -1,6 +1,6 @@
 This guide will explain the basics to get yourself familiarized with the game. If you're new to Akarra, the information below will be of great help. Advanced players may also find this information useful.
 
-_During this guide I will refer to Whispers In Akarra as "WiA"._
+_During this guide I will refer to Whispers in Akarra as "WiA"._
 
 ## Creating an Account
 

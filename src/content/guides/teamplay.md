@@ -1,6 +1,6 @@
 Written by Braiba, this guide will explain the basic overview and mechanics of teamwork in Akarra.
 
-_During this guide I will refer to Whispers In Akarra as "WiA"._
+_During this guide I will refer to Whispers in Akarra as "WiA"._
 
 ## Fellowships
 

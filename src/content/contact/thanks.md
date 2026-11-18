@@ -15,7 +15,7 @@ To honor all of those who have made this site possible I have created this page.
 - Team.Inc for helping me out in my noob days :).
 - Imalunatic for all his help with images, transferring items, and lots of other things when I needed it the most.
 - Yeknodd for all kinds of info on various item drops and other stuff.
-- Khaile, Tramce. and the Whispers In Akarra Development Team for working hard on such a cool game and giving me help, suggestions, and pointers throughout my time here.
+- Khaile, Tramce. and the Whispers in Akarra Development Team for working hard on such a cool game and giving me help, suggestions, and pointers throughout my time here.
 - Braiba, Enquillion, and Ranskanleipa for helping with the guides.
 
 **I thank the following people for submitting information:**
@@ -24,7 +24,7 @@ Aardwolf, phoenixlord, Ormoc, Taz, Geranik, Harpo, Sorcerer, Renmazuo, Mac, Nigh
 
 A tremendous thanks goes out to the above people. Without them, this site would not be possible.
 
-_All Whispers In Akarra images and game related content have been used with permission and are copyright Jens "Khaile" Bergensten, Jason "Trance" Rochon, and the WiA Dev Team._
+_All Whispers in Akarra images and game related content have been used with permission and are copyright Jens "Khaile" Bergensten, Jason "Trance" Rochon, and the WiA Dev Team._
 
 **Extra thanks goes to:**
 

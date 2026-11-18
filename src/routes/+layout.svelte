@@ -21,7 +21,7 @@
     <meta property="og:title" content={data.siteTitle} />
     <meta property="og:description" content={data.siteDescription} />
     <meta property="og:image" content={shareImage} />
-    <meta property="og:image:alt" content="Whispers In Akarra" />
+    <meta property="og:image:alt" content="Whispers in Akarra" />
     <meta name="twitter:card" content="summary" />
 </svelte:head>
 

@@ -1,4 +1,4 @@
-This page (as it grows by player submissions) will dive deep into the technical understanding behind Whispers In Akarra. Many people are always in search of technical information when it comes to finding out which items are best for certain classes, experimenting with different characters, and quite simply...the math behind it all.
+This page (as it grows by player submissions) will dive deep into the technical understanding behind Whispers in Akarra. Many people are always in search of technical information when it comes to finding out which items are best for certain classes, experimenting with different characters, and quite simply...the math behind it all.
 
 ## Weapons Guide
 

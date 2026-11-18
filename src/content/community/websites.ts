@@ -24,7 +24,7 @@ export const websiteDirectory: WebsiteDirectory = {
     ],
     inactive: [
         {
-            name: 'Whispers In Akarra (archived)',
+            name: 'Whispers in Akarra (archived)',
             url: 'https://web.archive.org/web/20040325013734/http://akarra.net/',
             description: "The game's own website while it was running.",
         },
@@ -32,7 +32,7 @@ export const websiteDirectory: WebsiteDirectory = {
             name: 'Akarra Warped (dead link)',
             url: 'http://way.to/WiA',
             description:
-                'A Whispers In Akarra fansite that also featured ideas for new items.',
+                'A Whispers in Akarra fansite that also featured ideas for new items.',
         },
         {
             name: 'Akarra Shrine (archived)',
@@ -43,7 +43,7 @@ export const websiteDirectory: WebsiteDirectory = {
         {
             name: "Sorcerer's Site (dead link)",
             url: 'http://www.sorcerer.de/akarra/',
-            description: 'A Whispers In Akarra fansite run by Sorcerer.',
+            description: 'A Whispers in Akarra fansite run by Sorcerer.',
         },
     ],
 };
