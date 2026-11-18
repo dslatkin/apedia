@@ -8,15 +8,15 @@ reference site for a 2D multiplayer online fantasy role-playing game called
 [Whispers in
 Akarra](https://web.archive.org/web/20040325013734/http://akarra.net/), the game
 itself a hobby project created by [Jens
-Bergensten](https://en.wikipedia.org/wiki/Jens_Bergensten), now the lead
-developer and designer for Minecraft.
+Bergensten](https://en.wikipedia.org/wiki/Jens_Bergensten), best known as
+the lead developer and designer of Minecraft.
 
-I have since converted the "Apedia" as it was affectionately called to a static
-site hosted on Vercel, with the only _very minor_ change to the original code
-being to replace an old bit of PHP I had used to render a "cool random weapon"
-on the home page of the site. If you're curious about the old web, I encourage
-you to check out [the home page](/old/index.php) or [the drop-down
-menu](/old/scripts/menu.js).
+I have since rebuilt the "Apedia" as it was affectionately called as a static
+SvelteKit site hosted on GitHub Pages. The design stays true to the original,
+but it now works on mobile, and its pages have been reorganized and updated for
+the shards that are played today. If you're curious about the old web, the
+original pages are kept in [old/](/old), including [the home
+page](/old/index.php) and [the DHTML drop-down menu](/old/scripts/menu.js).
 
 ## Screenshots
 
