@@ -39,7 +39,9 @@ jobs:
         id: build
         run: npm run build
         env:
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          BASE_PATH: /
+        # # Used when prototyping directly on `github.io`
+        #   BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload pages artifact
         id: deployment
