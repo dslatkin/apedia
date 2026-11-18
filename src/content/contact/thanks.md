@@ -28,6 +28,6 @@ A tremendous thanks goes out to the above people. Without them, this site would 
 
 - Luke O'Connel for providing hosting for the Apedia during a period in its early days.
 - [TwinHelix Designs](http://www.twinhelix.com) for original navigation menu's javascript.
-- [GoStats.com](www.gostats.com) for the original hit counter.
+- [GoStats.com](https://www.gostats.com) for the original hit counter.
 
 If I am missing anyone, please [let me know](/contact)!
