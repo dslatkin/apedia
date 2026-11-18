@@ -8,6 +8,7 @@
 
 <SectionedLayout
     title={data.title}
+    centerTitle
     sections={data.sections}
     sectionsLabel="Categories"
 >

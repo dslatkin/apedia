@@ -10,6 +10,7 @@
         introHtml,
         sections,
         sectionsLabel = 'Sections',
+        centerTitle = false,
         section,
     }: {
         title: string;
@@ -17,6 +18,7 @@
         introHtml?: string | undefined;
         sections: T[];
         sectionsLabel?: string;
+        centerTitle?: boolean;
         section: Snippet<[T]>;
     } = $props();
 
@@ -25,7 +27,7 @@
     );
 </script>
 
-<PageHeader {title} {author} {introHtml} />
+<PageHeader {title} {author} {introHtml} {centerTitle} />
 <JumpList items={jumpItems} label={sectionsLabel} />
 {#each sections as item (item.id)}
     <Section id={item.id} title={item.title}>
