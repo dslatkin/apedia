@@ -17,10 +17,16 @@
         centerTitle?: boolean;
         children?: Snippet | undefined;
     } = $props();
+
+    const documentTitle = $derived(
+        page.route.id === '/'
+            ? page.data.siteTitle
+            : `${title} – ${page.data.siteTitle}`,
+    );
 </script>
 
 <svelte:head>
-    <title>{title} – {page.data.siteTitle}</title>
+    <title>{documentTitle}</title>
 </svelte:head>
 
 <header class="mb-6 md:mb-8">
