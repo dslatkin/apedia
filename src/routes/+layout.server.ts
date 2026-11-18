@@ -6,6 +6,7 @@ export const prerender = true;
 
 export const load: LayoutServerLoad = () => ({
     siteTitle: site.title,
+    siteDescription: site.description,
     menus: site.menus,
     footerLinks: site.footer.links,
     footerHtml: renderMarkdown(site.footer.notice).html,

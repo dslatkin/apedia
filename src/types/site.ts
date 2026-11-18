@@ -2,6 +2,8 @@ import type { Href, Image, Markdown, Picture, SitePath } from './common';
 
 export interface Site {
     title: string;
+    /** Used for search results and share cards. */
+    description: string;
     menus: NavItem[];
     home: HomePage;
     footer: Footer;

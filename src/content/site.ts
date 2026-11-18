@@ -29,6 +29,8 @@ function randomWeapon(file: string, name: string): Picture {
 
 export const site: Site = {
     title: 'Akarrian Encyclopedia',
+    description:
+        'A reference website for Whispers in Akarra, a small, free, online role-playing game that originally ran from 2002 to 2004 and lives on in community shards.',
     menus: [
         { label: 'News', href: '/news' },
         {

@@ -1,11 +1,29 @@
 <script lang="ts">
+    import { asset } from '$app/paths';
+    import { page } from '$app/state';
     import SiteFooter from '$lib/components/site/SiteFooter.svelte';
     import SiteHeader from '$lib/components/site/SiteHeader.svelte';
     import type { LayoutProps } from './$types';
     import './layout.css';
 
     let { data, children }: LayoutProps = $props();
+
+    // Share cards need an absolute address.
+    const shareImage = $derived(
+        new URL(asset('/images/akarrabanner.gif'), page.url).href,
+    );
 </script>
+
+<svelte:head>
+    <meta name="description" content={data.siteDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={data.siteTitle} />
+    <meta property="og:title" content={data.siteTitle} />
+    <meta property="og:description" content={data.siteDescription} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:image:alt" content="Whispers In Akarra" />
+    <meta name="twitter:card" content="summary" />
+</svelte:head>
 
 <a
     href="#content"
