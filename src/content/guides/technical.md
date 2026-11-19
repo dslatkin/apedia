@@ -2,7 +2,7 @@ This page (as it grows by player submissions) will dive deep into the technical 
 
 ## Weapons Guide
 
-Created by Ruisleipa. [Download the spreadsheet](/files/weapons.zip).
+Created by Ruisleipa. [Download the spreadsheet](/guides/weapons.xls).
 
 This Excel spreadsheet is an excellent resource for comparing weapons matched to your current strength as well as other damage factors. Not only does this spreadsheet show the weapon's statistics and which weapons are the best, but it will also calculate how much damage each weapon will do in combat (depending on the values you enter). Simply enter your strength in the 'Strength' cell located in the upper right-hand corner. You may also enter any other damage bonuses from items such as armor, amulets, rings, etc. in the other cells located beneath it.
 
