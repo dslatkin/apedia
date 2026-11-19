@@ -28,8 +28,9 @@
         <div class="mt-6">
             <NewsArticle post={data.post} />
         </div>
-        <p class="mt-8">
-            <a href={resolve('/news')}>Older news</a>
+        <h2 class="mt-10 text-xl font-bold uppercase">Older News</h2>
+        <p class="mt-4">
+            <a href={resolve('/news')}>Browse by month</a>
         </p>
     </div>
 
