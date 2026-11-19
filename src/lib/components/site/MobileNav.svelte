@@ -10,44 +10,49 @@
         'flex cursor-pointer list-none items-center gap-3 select-none [&::-webkit-details-marker]:hidden',
     );
     const menuSummary = tw(
-        'justify-between px-4 py-3 whitespace-nowrap group-open/menu:bg-blue group-open/menu:text-white hover:bg-blue hover:text-white',
+        'justify-between border-x border-black bg-purple px-4 py-3 whitespace-nowrap group-open/menu:border-b group-open/menu:bg-blue group-open/menu:text-white hover:bg-blue hover:text-white',
     );
     const link = tw(
-        'block py-2 pr-4 text-black no-underline hover:bg-blue hover:text-white',
+        'block border-x border-black bg-purple px-3 py-2 text-black no-underline hover:bg-blue hover:text-white',
     );
-    const groupLabel = tw('block py-2 pr-4 italic');
+    const groupLabel = tw(
+        'block border-x border-black bg-purple px-3 py-2 italic',
+    );
+    const parentRow = tw('border-b border-black');
     const fade = tw(
         'transition-opacity duration-200 group-open/nav:opacity-0 motion-reduce:transition-none',
     );
     const turn = tw(
         'origin-center transition-transform duration-200 [transform-box:fill-box] motion-reduce:transition-none',
     );
-    const indent = [tw('pl-4'), tw('pl-8'), tw('pl-12'), tw('pl-16')];
 </script>
 
-{#snippet entries(list: NavItem[], depth: number)}
-    <ul class="divide-y divide-black border-t border-black">
+<!--
+    Each row draws its own side borders and only the rows are purple, and the nav covers the
+    frame's side borders, so each inset submenu shows the page background beside it out to the
+    edge. The negative bottom margin lays its last
+    row's border over the line that closes its parent.
+-->
+{#snippet entries(list: NavItem[])}
+    <ul class="mx-3 -mb-px">
         {#each list as entry (entry.label)}
-            <li>
+            <li class="border-b border-black">
                 {#if 'items' in entry}
                     {#if entry.href}
                         <SiteLink
                             href={entry.href}
-                            class={twMerge(link, indent[depth])}
+                            class={twMerge(link, parentRow)}
                         >
                             {entry.label}
                         </SiteLink>
                     {:else}
-                        <span class={twMerge(groupLabel, indent[depth])}>
+                        <span class={twMerge(groupLabel, parentRow)}>
                             {entry.label}
                         </span>
                     {/if}
-                    {@render entries(entry.items, depth + 1)}
+                    {@render entries(entry.items)}
                 {:else}
-                    <SiteLink
-                        href={entry.href}
-                        class={twMerge(link, indent[depth])}
-                    >
+                    <SiteLink href={entry.href} class={link}>
                         {entry.label}
                     </SiteLink>
                 {/if}
@@ -56,9 +61,14 @@
     </ul>
 {/snippet}
 
-<nav aria-label="Site" class="bg-purple md:hidden">
+<nav aria-label="Site" class="-mx-px bg-gray-dark md:hidden">
     <details class="group/nav">
-        <summary class={twMerge(summary, 'px-4 py-3 font-bold')}>
+        <summary
+            class={twMerge(
+                summary,
+                'border-x border-black bg-purple px-4 py-3 font-bold',
+            )}
+        >
             <svg
                 class="size-5"
                 viewBox="0 0 20 20"
@@ -102,7 +112,7 @@
                                     &gt;
                                 </span>
                             </summary>
-                            {@render entries(menu.items, 1)}
+                            {@render entries(menu.items)}
                         </details>
                     {/if}
                 </li>
