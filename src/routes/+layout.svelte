@@ -22,7 +22,7 @@
     <meta property="og:image" content={shareImage} />
     <meta property="og:image:width" content="374" />
     <meta property="og:image:height" content="81" />
-    <meta property="og:image:alt" content="Whispers in Akarra" />
+    <meta property="og:image:alt" content="Akarrian Encyclopedia logo" />
     <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
