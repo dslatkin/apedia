@@ -1,5 +1,5 @@
-import { weaponCategories } from '$content/equipment/categories';
-import { weapons } from '$content/equipment/weapons';
+import { weaponCategories } from '../categories';
+import { weapons } from './weapons';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => ({

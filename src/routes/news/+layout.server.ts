@@ -1,4 +1,4 @@
-import { newsPosts } from '$content/news';
+import { newsPosts } from './posts';
 import { groupByMonth } from '$lib/news';
 import type { LayoutServerLoad } from './$types';
 

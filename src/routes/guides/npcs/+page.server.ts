@@ -1,4 +1,4 @@
-import { npcs } from '$content/guides/npcs';
+import { npcs } from './npcs';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { NpcView } from '$lib/views';
 import type { PageServerLoad } from './$types';

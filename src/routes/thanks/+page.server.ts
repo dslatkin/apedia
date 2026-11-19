@@ -1,4 +1,4 @@
-import { thanksPage } from '$content/contact';
+import { thanksPage } from './thanks';
 import { loadMarkdownPage } from '$lib/server/pages';
 import type { PageServerLoad } from './$types';
 

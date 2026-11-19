@@ -1,4 +1,4 @@
-import { newsPosts } from '$content/news';
+import { newsPosts } from '../posts';
 import { formatMonth, monthOf } from '$lib/format';
 import { renderMarkdown } from '$lib/server/markdown';
 import { error } from '@sveltejs/kit';

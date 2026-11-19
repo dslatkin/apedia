@@ -1,5 +1,5 @@
-import { itemCategories } from '$content/equipment/categories';
-import { items } from '$content/equipment/items';
+import { itemCategories } from '../categories';
+import { items } from './items';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { ItemView } from '$lib/views';
 import type { PageServerLoad } from './$types';

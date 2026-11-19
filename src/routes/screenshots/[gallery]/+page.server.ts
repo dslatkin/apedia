@@ -1,4 +1,4 @@
-import { galleries } from '$content/screenshots';
+import { galleries } from './galleries';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { ScreenshotView } from '$lib/views';
 import { error } from '@sveltejs/kit';

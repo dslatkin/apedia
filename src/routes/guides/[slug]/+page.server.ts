@@ -1,4 +1,4 @@
-import { guides } from '$content/guides';
+import { guides } from './guides';
 import { loadMarkdownPage } from '$lib/server/pages';
 import { error } from '@sveltejs/kit';
 import type { EntryGenerator, PageServerLoad } from './$types';

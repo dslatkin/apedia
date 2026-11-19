@@ -43,7 +43,6 @@ export default defineConfig({
             },
             alias: {
                 $types: 'src/types',
-                $content: 'src/content',
             },
             typescript: {
                 config: (config) => {

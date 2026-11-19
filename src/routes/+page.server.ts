@@ -1,5 +1,5 @@
-import { newsPosts } from '$content/news';
-import { site } from '$content/site';
+import { newsPosts } from './news/posts';
+import { site } from './site';
 import { renderMarkdown } from '$lib/server/markdown';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';

@@ -1,4 +1,4 @@
-import { playPage } from '$content/community/play';
+import { playPage } from './play';
 import { loadMarkdownPage } from '$lib/server/pages';
 import type { PageServerLoad } from './$types';
 

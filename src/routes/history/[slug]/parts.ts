@@ -1,5 +1,5 @@
 import type { MarkdownPage } from '$types';
-import { shards, withShardList } from '../community/shards';
+import { shards, withShardList } from '$lib/shards';
 import communityShards from './community-shards.md?raw';
 import theOriginalGame from './the-original-game.md?raw';
 

@@ -1,4 +1,4 @@
-import { site } from '$content/site';
+import { site } from './site';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { LayoutServerLoad } from './$types';
 

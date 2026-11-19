@@ -1,4 +1,4 @@
-import { classTree } from '$content/guides/classes';
+import { classTree } from './classes';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { CharacterClassView } from '$lib/views';
 import type { PageServerLoad } from './$types';

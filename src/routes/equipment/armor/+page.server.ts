@@ -1,5 +1,5 @@
-import { armor } from '$content/equipment/armor';
-import { armorSlots } from '$content/equipment/categories';
+import { armor } from './armor';
+import { armorSlots } from '../categories';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => ({

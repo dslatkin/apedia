@@ -1,4 +1,7 @@
-import { loadArchiveNotice } from '$lib/server/pages';
+import { renderMarkdown } from '$lib/server/markdown';
+import { site } from '../site';
 import type { LayoutServerLoad } from './$types';
 
-export const load: LayoutServerLoad = () => loadArchiveNotice();
+export const load: LayoutServerLoad = () => ({
+    archiveNoticeHtml: renderMarkdown(site.archiveNotice).html,
+});

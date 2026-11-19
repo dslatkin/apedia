@@ -1,4 +1,4 @@
-import { commandReference } from '$content/guides/commands';
+import { commandReference } from './commands';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { CommandView } from '$lib/views';
 import type { Shortcut } from '$types';

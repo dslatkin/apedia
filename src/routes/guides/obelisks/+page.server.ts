@@ -1,4 +1,4 @@
-import { obelisks } from '$content/guides/obelisks';
+import { obelisks } from './obelisks';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => ({

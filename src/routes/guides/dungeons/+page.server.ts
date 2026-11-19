@@ -1,4 +1,4 @@
-import { dungeons } from '$content/guides/dungeons';
+import { dungeons } from './dungeons';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => ({

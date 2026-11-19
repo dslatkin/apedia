@@ -4,14 +4,6 @@ import gettingStarted from './getting-started.md?raw';
 import teamplay from './teamplay.md?raw';
 import technical from './technical.md?raw';
 
-export { classTree } from './classes';
-export { commandReference } from './commands';
-export { dungeons } from './dungeons';
-export { monsterLevelBands } from './monster-levels';
-export { monsters } from './monsters';
-export { npcs } from './npcs';
-export { obelisks } from './obelisks';
-
 export const guides: MarkdownPage[] = [
     {
         slug: 'getting-started',

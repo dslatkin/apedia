@@ -1,4 +1,4 @@
-import { clanDirectory } from '$content/community/clans';
+import { clanDirectory } from './clans';
 import { formatDate } from '$lib/format';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { ClanView } from '$lib/views';

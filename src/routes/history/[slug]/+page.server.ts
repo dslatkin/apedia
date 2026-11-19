@@ -1,4 +1,4 @@
-import { historyParts } from '$content/history';
+import { historyParts } from './parts';
 import { loadMarkdownPage } from '$lib/server/pages';
 import { error } from '@sveltejs/kit';
 import type { EntryGenerator, PageServerLoad } from './$types';

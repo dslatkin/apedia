@@ -1,5 +1,5 @@
-import { scrollCategories } from '$content/equipment/categories';
-import { scrolls } from '$content/equipment/scrolls';
+import { scrollCategories } from '../categories';
+import { scrolls } from './scrolls';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => ({

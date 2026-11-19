@@ -1,5 +1,5 @@
-import { monsterLevelBands } from '$content/guides/monster-levels';
-import { monsters } from '$content/guides/monsters';
+import { monsterLevelBands } from './levels';
+import { monsters } from './monsters';
 import { inBand } from '$lib/monsters';
 import type { PageServerLoad } from './$types';
 

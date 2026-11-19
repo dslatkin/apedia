@@ -6,9 +6,9 @@ import {
     scrollCategories,
     weaponCategories,
 } from './equipment/categories';
-import { commandReference } from './guides/commands';
-import { monsterLevelBands } from './guides/monster-levels';
-import { historyParts } from './history';
+import { commandReference } from './guides/commands/commands';
+import { monsterLevelBands } from './guides/monsters/levels';
+import { historyParts } from './history/[slug]/parts';
 
 function sections(route: SitePathname, categories: Category[]): NavLink[] {
     return categories.map(({ id, label }) => ({

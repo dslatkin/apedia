@@ -1,4 +1,4 @@
-import { websiteDirectory } from '$content/community/websites';
+import { websiteDirectory } from './websites';
 import { renderMarkdown } from '$lib/server/markdown';
 import type { Website } from '$types';
 import type { PageServerLoad } from './$types';

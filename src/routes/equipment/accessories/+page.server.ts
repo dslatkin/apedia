@@ -1,5 +1,5 @@
-import { accessories } from '$content/equipment/accessories';
-import { accessoryCategories } from '$content/equipment/categories';
+import { accessories } from './accessories';
+import { accessoryCategories } from '../categories';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => ({

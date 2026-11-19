@@ -1,6 +1,6 @@
 import type { MarkdownPage } from '$types';
 import play from './play.md?raw';
-import { shards, withShardList } from './shards';
+import { shards, withShardList } from '$lib/shards';
 
 const running = shards.filter((shard) => shard.running);
 
