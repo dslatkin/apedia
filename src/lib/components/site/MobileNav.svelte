@@ -16,6 +16,12 @@
         'block py-2 pr-4 text-black no-underline hover:bg-blue hover:text-white',
     );
     const groupLabel = tw('block py-2 pr-4 italic');
+    const fade = tw(
+        'transition-opacity duration-200 group-open/nav:opacity-0 motion-reduce:transition-none',
+    );
+    const turn = tw(
+        'origin-center transition-transform duration-200 [transform-box:fill-box] motion-reduce:transition-none',
+    );
     const indent = [tw('pl-4'), tw('pl-8'), tw('pl-12'), tw('pl-16')];
 </script>
 
@@ -53,13 +59,24 @@
 <nav aria-label="Site" class="bg-purple md:hidden">
     <details class="group/nav">
         <summary class={twMerge(summary, 'px-4 py-3 font-bold')}>
-            <svg class="size-5" viewBox="0 0 20 20" aria-hidden="true">
+            <svg
+                class="size-5"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+            >
+                <path d="M2 5h16M2 15h16" class={fade} />
+                <!-- Two bars on top of each other, so the middle bar splits into the X. -->
                 <path
-                    d="M2 5h16M2 10h16M2 15h16"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    d="M2 10h16"
+                    class={twMerge(turn, 'group-open/nav:rotate-45')}
+                />
+                <path
+                    d="M2 10h16"
+                    class={twMerge(turn, 'group-open/nav:-rotate-45')}
                 />
             </svg>
             Menu
@@ -80,7 +97,7 @@
                                 {menu.label}
                                 <span
                                     aria-hidden="true"
-                                    class="group-open/menu:rotate-90"
+                                    class="transition-transform duration-200 group-open/menu:rotate-90 motion-reduce:transition-none"
                                 >
                                     &gt;
                                 </span>
