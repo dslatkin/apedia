@@ -6,7 +6,13 @@
         name,
         images,
         badge,
-    }: { name: string; images: Image[]; badge?: string | undefined } = $props();
+        footnoteId,
+    }: {
+        name: string;
+        images: Image[];
+        badge?: string | undefined;
+        footnoteId?: string | undefined;
+    } = $props();
 </script>
 
 <span class="flex flex-col items-center gap-1">
@@ -21,7 +27,13 @@
             {/each}
         </span>
     {/if}
-    <span class="font-bold">{name}</span>
+    <span class="font-bold"
+        >{name}{#if footnoteId}<a
+                href="#{footnoteId}"
+                aria-label="See the note below the table"
+                class="no-underline">*</a
+            >{/if}</span
+    >
     {#if badge}
         <span class="text-xs italic">({badge})</span>
     {/if}

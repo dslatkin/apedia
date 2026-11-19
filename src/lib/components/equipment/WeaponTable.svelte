@@ -1,7 +1,8 @@
 <script lang="ts">
     import type { Weapon } from '$types';
     import DataTable from '../DataTable.svelte';
-    import Nameplate from '../Nameplate.svelte';
+    import DataMinedNote from './DataMinedNote.svelte';
+    import EquipmentName from './EquipmentName.svelte';
     import ValueList from '../ValueList.svelte';
     import RequirementsList from './RequirementsList.svelte';
 
@@ -9,6 +10,8 @@
         weapons,
         caption,
     }: { weapons: Weapon[]; caption?: string | undefined } = $props();
+
+    const noteId = $props.id();
 
     let ranged = $derived(weapons.some((weapon) => weapon.range !== undefined));
     let columns = $derived([
@@ -25,11 +28,7 @@
 <DataTable {caption} {columns} rows={weapons}>
     {#snippet row(weapon)}
         <th scope="row">
-            <Nameplate
-                name={weapon.name}
-                images={weapon.images}
-                badge={weapon.unique ? 'Unique' : undefined}
-            />
+            <EquipmentName item={weapon} {noteId} />
         </th>
         <td>{weapon.damage.min.toFixed(1)} / {weapon.damage.max.toFixed(1)}</td>
         <td>{weapon.staminaCost.toFixed(1)}</td>
@@ -43,5 +42,8 @@
         </td>
         <td><ValueList items={weapon.effects} /></td>
         <td><RequirementsList requirements={weapon.requirements} /></td>
+    {/snippet}
+    {#snippet footnote()}
+        <DataMinedNote items={weapons} id={noteId} />
     {/snippet}
 </DataTable>

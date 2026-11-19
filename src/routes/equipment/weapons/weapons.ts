@@ -424,6 +424,34 @@ export const weapons: Weapon[] = [
         },
     },
     {
+        id: 'enforced-oncin-pick',
+        name: 'Enforced Oncin Pick',
+        images: [
+            {
+                src: '/images/weapons/axes/enforced-oncin-pick.png',
+                alt: 'Enforced Oncin Pick',
+            },
+        ],
+        dataMined: true,
+        effects: [],
+        requirements: {
+            strength: 91,
+            agility: 67,
+            twoHanded: true,
+        },
+        category: 'axes',
+        damage: {
+            min: 15.8,
+            max: 49.5,
+        },
+        staminaCost: 12.5,
+        attackSpeed: 32,
+        critical: {
+            hit: 10,
+            fumble: 10,
+        },
+    },
+    {
         id: 'improved-kheten-axe',
         name: 'Improved Kheten Axe',
         images: [
@@ -444,6 +472,34 @@ export const weapons: Weapon[] = [
             max: 55.5,
         },
         staminaCost: 14.0,
+        attackSpeed: 32,
+        critical: {
+            hit: 10,
+            fumble: 10,
+        },
+    },
+    {
+        id: 'elite-kheten-axe',
+        name: 'Elite Kheten Axe',
+        images: [
+            {
+                src: '/images/weapons/axes/elite-kheten-axe.png',
+                alt: 'Elite Kheten Axe',
+            },
+        ],
+        dataMined: true,
+        effects: [],
+        requirements: {
+            strength: 148,
+            agility: 106,
+            twoHanded: true,
+        },
+        category: 'axes',
+        damage: {
+            min: 27.0,
+            max: 85.5,
+        },
+        staminaCost: 21.5,
         attackSpeed: 32,
         critical: {
             hit: 10,
@@ -1221,6 +1277,33 @@ export const weapons: Weapon[] = [
         },
     },
     {
+        id: 'assassins-stiletto-of-venom',
+        name: "Assassin's Stiletto of Venom",
+        images: [
+            {
+                src: '/images/weapons/daggers/assassins-stiletto-of-venom.png',
+                alt: "Assassin's Stiletto of Venom",
+            },
+        ],
+        dataMined: true,
+        effects: ['Stiletto Venom'],
+        requirements: {
+            agility: 215,
+            faith: 45,
+        },
+        category: 'daggers',
+        damage: {
+            min: 9.5,
+            max: 28.0,
+        },
+        staminaCost: 5.8,
+        attackSpeed: 20,
+        critical: {
+            hit: 10,
+            fumble: 5,
+        },
+    },
+    {
         id: 'beautiful-bouquet',
         name: 'Beautiful Bouquet',
         images: [
@@ -1773,6 +1856,33 @@ export const weapons: Weapon[] = [
             max: 42.0,
         },
         staminaCost: 14.5,
+        attackSpeed: 46,
+        critical: {
+            hit: 10,
+            fumble: 10,
+        },
+    },
+    {
+        id: 'elite-halberd',
+        name: 'Elite Halberd',
+        images: [
+            {
+                src: '/images/weapons/spears/elite-halberd.png',
+                alt: 'Elite Halberd',
+            },
+        ],
+        dataMined: true,
+        effects: [],
+        requirements: {
+            strength: 154,
+            twoHanded: true,
+        },
+        category: 'spears',
+        damage: {
+            min: 16.5,
+            max: 46.5,
+        },
+        staminaCost: 15.8,
         attackSpeed: 46,
         critical: {
             hit: 10,
@@ -2568,6 +2678,33 @@ export const weapons: Weapon[] = [
         critical: {
             hit: 13,
             fumble: 8,
+        },
+    },
+    {
+        id: 'quality-blade',
+        name: 'Quality Blade',
+        images: [
+            {
+                src: '/images/weapons/swords/quality-blade.png',
+                alt: 'Quality Blade',
+            },
+        ],
+        dataMined: true,
+        effects: [],
+        requirements: {
+            strength: 117,
+            agility: 117,
+        },
+        category: 'swords',
+        damage: {
+            min: 12.0,
+            max: 30.75,
+        },
+        staminaCost: 8.0,
+        attackSpeed: 25,
+        critical: {
+            hit: 10,
+            fumble: 5,
         },
     },
     {

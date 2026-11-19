@@ -20,7 +20,7 @@ To honor all of those who have made this site possible I have created this page.
 
 **I thank the following people for submitting information:**
 
-Aardwolf, phoenixlord, Ormoc, Taz, Geranik, Harpo, Sorcerer, Renmazuo, Mac, Night, Ruisleipa, Timotheus, Charchie, Littlex, Phobic, Trick, Xofia, Kilala, Kiyohara, Gorilla, Spoon, Enquillion, Poseidon, Ranskanleipa, Tyrael, DarkRaven, Cait, Mikehappy, KamuzBR, Chybigohan, and Sokrates for various images of the items and item stats
+Aardwolf, phoenixlord, Ormoc, Taz, Geranik, Harpo, Sorcerer, Renmazuo, Mac, Night, Ruisleipa, Timotheus, Charchie, Littlex, Phobic, Trick, Xofia, Kilala, Kiyohara, Gorilla, Spoon, Enquillion, Poseidon, Ranskanleipa, Tyrael, DarkRaven, Cait, Mikehappy, KamuzBR, Chybigohan, Sokrates, and Felicia for various images of the items and item stats
 
 A tremendous thanks goes out to the above people. Without them, this site would not be possible.
 

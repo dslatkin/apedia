@@ -18,6 +18,8 @@ export interface EquipmentBase {
     name: string;
     images: Image[];
     unique?: boolean;
+    /** Found only after the game shut down, by data mining the game's files. */
+    dataMined?: boolean;
     effects: string[];
     requirements: Requirements;
     notes?: Markdown;

@@ -8,12 +8,14 @@
         columns,
         rows,
         row,
+        footnote,
         variant = 'data',
     }: {
         caption?: string | undefined;
         columns: string[];
         rows: T[];
         row: Snippet<[T]>;
+        footnote?: Snippet | undefined;
         variant?: 'data' | 'text';
     } = $props();
 
@@ -52,3 +54,4 @@
         </tbody>
     </table>
 </div>
+{@render footnote?.()}
