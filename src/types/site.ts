@@ -31,6 +31,5 @@ export interface HomePage {
 
 export interface Footer {
     links: NavLink[];
-    notice: Markdown;
     banner?: Image;
 }

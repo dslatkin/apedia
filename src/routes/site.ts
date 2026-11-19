@@ -153,7 +153,6 @@ export const site: Site = {
             src: '/images/akarrabanner.gif',
             alt: 'Whispers in Akarra',
         },
-        notice: 'This website and its contents are copyright Danny "Talonz" Slatkin.\n\nWhispers in Akarra are copyright Jens "Khaile" Bergensten.',
     },
     archiveNotice:
         "The content on this page is kept as an archive of the original game's mechanics.\n\n[Shards](/community/play) can differ from what you see here for creative or balance purposes.",

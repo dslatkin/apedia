@@ -1,5 +1,4 @@
 import { site } from './site';
-import { renderMarkdown } from '$lib/server/markdown';
 import type { LayoutServerLoad } from './$types';
 
 export const prerender = true;
@@ -9,6 +8,5 @@ export const load: LayoutServerLoad = () => ({
     siteDescription: site.description,
     menus: site.menus,
     footerLinks: site.footer.links,
-    footerHtml: renderMarkdown(site.footer.notice).html,
     footerBanner: site.footer.banner,
 });

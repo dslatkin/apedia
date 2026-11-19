@@ -2,15 +2,12 @@
     import { asset } from '$app/paths';
     import type { Image, NavLink } from '$types';
     import SiteLink from '../SiteLink.svelte';
-    import Prose from '../Prose.svelte';
 
     let {
         links,
-        noticeHtml,
         banner,
     }: {
         links: NavLink[];
-        noticeHtml: string;
         banner?: Image | undefined;
     } = $props();
 </script>
@@ -26,7 +23,7 @@
         </ul>
     </nav>
     {#if banner}
-        <p class="mb-6">
+        <p>
             <img
                 src={asset(banner.src)}
                 alt={banner.alt}
@@ -36,5 +33,4 @@
             />
         </p>
     {/if}
-    <Prose html={noticeHtml} class="leading-normal" />
 </footer>

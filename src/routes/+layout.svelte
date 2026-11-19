@@ -49,10 +49,6 @@
         >
             {@render children()}
         </main>
-        <SiteFooter
-            links={data.footerLinks}
-            noticeHtml={data.footerHtml}
-            banner={data.footerBanner}
-        />
+        <SiteFooter links={data.footerLinks} banner={data.footerBanner} />
     </div>
 </div>
