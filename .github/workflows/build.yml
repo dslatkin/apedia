@@ -39,7 +39,7 @@ jobs:
         id: build
         run: npm run build
         env:
-          BASE_PATH: /
+          BASE_PATH: ''
         # # Used when prototyping directly on `github.io`
         #   BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
