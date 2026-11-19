@@ -10,19 +10,20 @@
 
     // Share cards need an absolute address.
     const shareImage = $derived(
-        new URL(asset('/images/akarrabanner.gif'), page.url).href,
+        new URL(asset('/images/share-card.jpg'), page.url).href,
     );
 </script>
 
 <svelte:head>
     <meta name="description" content={data.siteDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={data.siteTitle} />
     <meta property="og:title" content={data.siteTitle} />
     <meta property="og:description" content={data.siteDescription} />
     <meta property="og:image" content={shareImage} />
+    <meta property="og:image:width" content="374" />
+    <meta property="og:image:height" content="81" />
     <meta property="og:image:alt" content="Whispers in Akarra" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <a

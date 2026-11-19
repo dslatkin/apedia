@@ -39,7 +39,7 @@ export default defineConfig({
             adapter: adapter(),
             // The contact form's no-JS redirect needs the site's absolute URL at build time.
             prerender: {
-                origin: 'https://apedia.talonz.com',
+                origin: 'https://akarrianencyclopedia.com',
             },
             alias: {
                 $types: 'src/types',
