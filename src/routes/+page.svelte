@@ -43,7 +43,7 @@
         </h2>
         {#if weapon}
             <PictureLink picture={weapon} class="[zoom:1.25]" />
-            <p class="font-bold">(Click the picture for an enlargement)</p>
+            <p class="font-bold">Click the picture for an enlargement</p>
         {/if}
     </aside>
 </div>
