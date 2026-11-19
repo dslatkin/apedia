@@ -1,6 +1,6 @@
 # Akarrian Encyclopedia
 
-Visit [apedia.talonz.com](https://apedia.talonz.com) to view the deployed site.
+Visit [akarrianencyclopedia.com](https://akarrianencyclopedia.com) to view the deployed site.
 
 This is a very old website that I took over maintenance for from a person who
 went by the in-game name "Trance" way back in June 2003. It was the primary
