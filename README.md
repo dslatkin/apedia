@@ -22,16 +22,16 @@ page](/old/index.php) and [the DHTML drop-down menu](/old/scripts/menu.js).
 
 ### First wave of monsters in a special event
 
-![Screenshot](/static/images/screenshots/large/flameattack/firstwave.jpg)
+![Screenshot](/static/images/screenshots/a1/large/flameattack/firstwave.jpg)
 
 ### The Purple Haze clan is founded
 
-![Screenshot](/static/images/screenshots/large/normal/clanfounding.jpg)
+![Screenshot](/static/images/screenshots/a1/large/normal/clanfounding.jpg)
 
 ### A darkling village
 
-![Screenshot](/static/images/screenshots/large/normal/underground_village.jpg)
+![Screenshot](/static/images/screenshots/a1/large/normal/underground_village.jpg)
 
 ### The first in-game wedding
 
-![Screenshot](/static/archives/screenshots/pa_13/large/normal/wedding.jpg)
+![Screenshot](/static/images/screenshots/pa13/large/normal/wedding.jpg)
