@@ -46,7 +46,12 @@ export const scrolls: Scroll[] = [
     {
         id: 'knowledge-of-ranged-weapons',
         name: 'Knowledge of Ranged Weapons',
-        images: [],
+        images: [
+            {
+                src: '/images/scrolls/mundane/ranged01.png',
+                alt: 'Knowledge of Ranged Weapons',
+            },
+        ],
         effects: [],
         requirements: {},
         category: 'mundane',
